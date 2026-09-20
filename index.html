@@ -3,329 +3,399 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Off-market Calgary developer condo inventory for investors buying four or more units. Developer volume pricing below current list. Kamil Lalji and Jonathan Munan, CIR Realty.">
+<meta name="description" content="Off-market Calgary developer condo inventory for investors buying four or more units, at developer volume pricing below current list. Kamil Lalji and Jonathan Munan, REALTORS®, CIR Realty.">
 <meta name="robots" content="noindex">
 <title>Doorstack · Off-market Calgary condo blocks for investors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>html{color-scheme:dark}body{margin:0;font-family:system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Fraunces:opsz,wght,SOFT@9..144,500,0&family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <style>
 :root{
-  --ground:#0E1412; --panel:#151D19; --ink:#EDE9DC; --muted:#9AA69E; --line:#26312B;
-  --accent:#C9A227; --accent-ink:#0E1412; --cell:#22302A; --cell-on:#EDE9DC; --cell-pick:#C9A227; --ok:#6FC79A;
+  --ground:#FFFFFF; --ground-2:#F6F7F9; --panel:#FFFFFF; --ink:#101828; --navy:#0B2545; --text:#344054; --muted:#667085; --line:#E4E7EC; --line-2:#D0D5DD;
+  --accent:#0B2545; --accent-2:#1F5FA8; --ok:#027A48; --ok-bg:#ECFDF3; --cell:#EEF2F6; --cell-line:#D0D5DD; --cell-pick:#0B2545;
 }
 *{box-sizing:border-box}
-body{background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;margin:0}
-.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
-h1,h2,h3,.disp{font-family:Fraunces,Georgia,serif;text-wrap:balance;margin:0;font-weight:400}
-h1{font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.015em}
-h1 em{font-style:italic;color:var(--accent)}
-h2{font-variation-settings:"opsz" 96,"SOFT" 20;font-size:clamp(28px,3.6vw,40px);line-height:1.08;letter-spacing:-.01em}
-h3{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:17px;line-height:1.3}
-.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+html{color-scheme:light}
+body{margin:0;background:var(--ground);color:var(--text);font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
+h1,h2,h3{margin:0;color:var(--ink);text-wrap:balance}
+h1,h2{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.01em}
+h1{font-size:clamp(38px,5.2vw,58px);line-height:1.08;font-variation-settings:"opsz" 72}
+h2{font-size:clamp(28px,3.2vw,38px);line-height:1.15;font-variation-settings:"opsz" 48}
+h3{font-size:17px;font-weight:600;line-height:1.35}
 p{margin:0}
-.lede{font-size:19px;max-width:34em;color:#CFCBBE}
 a{color:inherit}
-.btn{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:14px;letter-spacing:.04em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:2px;border:1px solid var(--muted);text-decoration:none;cursor:pointer;background:transparent;color:var(--ink)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2)}
+.lede{font-size:18px;color:var(--text);max-width:36em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line-2);background:#fff;color:var(--ink);cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s}
+.btn:hover{background:var(--ground-2)}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.primary:hover{background:#123463}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
 
-.nav{display:flex;align-items:center;justify-content:space-between;padding-block:20px;border-bottom:1px solid var(--line)}
-.logo{font-family:Fraunces,serif;font-weight:500;font-variation-settings:"opsz" 144,"SOFT" 0;font-size:24px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo i{display:grid;grid-template-columns:repeat(2,6px);gap:2px}
-.logo i b{display:block;width:6px;height:6px;background:var(--muted)}
-.logo i b:nth-child(1){background:var(--accent)}
-.nav .links{display:flex;gap:24px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.nav .links a{text-decoration:none;color:var(--muted)}
-.reg{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);padding-block:10px;border-bottom:1px solid var(--line);display:flex;gap:6px 24px;flex-wrap:wrap}
-.reg{align-items:center}.cir{height:26px;width:auto;display:block}
-.reg b{font-weight:500;color:var(--ink)}
-@media(max-width:640px){.nav .links{display:none}}
+/* top bar + nav */
+.topbar{background:var(--navy);color:#C7D2E3;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:8px}
+.topbar b{color:#fff;font-weight:600}
+.topbar span{white-space:nowrap}
+.nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,Newsreader,serif;font-weight:500;font-variation-settings:"opsz" 144,"SOFT" 0;font-size:24px;color:var(--ink);letter-spacing:-.01em}
+.mark{display:grid;grid-template-columns:repeat(2,7px);gap:2px}
+.mark b{display:block;width:7px;height:7px;background:var(--navy)}
+.mark b:nth-child(1){background:var(--accent-2)}
+.nav .links{display:flex;gap:26px;font-size:14px;font-weight:500}
+.nav .links a{text-decoration:none;color:var(--text)}
+.nav .links a:hover{color:var(--ink)}
+.nav .right{display:flex;align-items:center;gap:18px}
+.nav .cir{height:22px;width:auto;display:block}
+@media(max-width:900px){.nav .links{display:none}}
+@media(max-width:560px){.nav .cir{display:none}}
 
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-block:72px 64px}
-@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding-block:44px}}
-.hero .copy{display:grid;gap:24px}
+/* hero */
+.hero{padding-block:72px 64px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+@media(max-width:900px){.hero{padding-block:48px}.hero .wrap{grid-template-columns:1fr;gap:40px}}
+.hero .copy{display:grid;gap:22px}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
-.hero .fine{font-size:13px;color:var(--muted);max-width:36em;font-family:"IBM Plex Mono",monospace;line-height:1.6}
+.hero .fine{font-size:14px;color:var(--muted);max-width:36em}
+.trust{display:flex;gap:10px 28px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding-top:6px}
+.trust span{display:inline-flex;align-items:center;gap:7px}
+.trust svg{width:14px;height:14px;color:var(--ok)}
 
-.stack{background:var(--panel);border:1px solid var(--line);padding:22px;display:grid;gap:18px}
+/* illustration card */
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 12px 32px -16px rgba(16,24,40,.18)}
+.stack{padding:22px;display:grid;gap:18px}
 .stack .head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-.stack .head .eyebrow{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
-.grid span{aspect-ratio:1.6;background:var(--cell);transition:background .18s}
-.grid span.sold{background:var(--cell-on);opacity:.18}
-.grid span.pick{background:var(--cell-pick)}
-.stack .ctl{display:grid;gap:8px}
-.stack .ctl label{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.stack input[type=range]{width:100%;accent-color:var(--accent)}
-.readout{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid var(--line);padding-top:16px}
-.readout .k{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
-.readout .v{font-family:Fraunces,serif;font-weight:500;font-size:28px;font-variation-settings:"opsz" 96;font-variant-numeric:tabular-nums;line-height:1.1}
-.readout .v.acc{color:var(--accent)}
-.stack .note{font-size:12px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.6}
+.stack .head .t{font-size:13px;font-weight:600;color:var(--ink)}
+.stack .head .l{font-size:12px;color:var(--muted);display:flex;gap:14px}
+.stack .head .l i{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:5px;border:1px solid var(--cell-line);background:var(--cell)}
+.stack .head .l i.p{background:var(--cell-pick);border-color:var(--cell-pick)}
+.stack .head .l i.s{background:repeating-linear-gradient(45deg,#fff 0 2px,var(--cell-line) 2px 3px)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--ground-2)}
+.grid span{aspect-ratio:1.6;background:var(--cell);border:1px solid var(--cell-line);border-radius:3px;transition:background .15s,border-color .15s}
+.grid span.sold{background:repeating-linear-gradient(45deg,#fff 0 2px,var(--cell-line) 2px 3px)}
+.grid span.pick{background:var(--cell-pick);border-color:var(--cell-pick)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.seg .lbl{font-size:13px;font-weight:600;color:var(--ink);margin-right:6px}
+.seg button{font:inherit;font-size:14px;font-weight:500;padding:7px 14px;border-radius:6px;border:1px solid var(--line-2);background:#fff;color:var(--text);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.readout{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;border-top:1px solid var(--line);padding-top:16px}
+.readout .k{font-size:12px;color:var(--muted)}
+.readout .v{font-size:22px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.2}
+.readout .v.acc{color:var(--accent-2)}
+.stack .note{font-size:12px;color:var(--muted);line-height:1.5}
 @media(max-width:420px){.readout{grid-template-columns:1fr 1fr}}
 
-section{padding-block:60px;border-top:1px solid var(--line)}
-.sec-head{display:grid;gap:12px;max-width:44em;margin-bottom:34px}
-.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
-.cols2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-@media(max-width:820px){.cols3,.cols2{grid-template-columns:1fr}}
-.step{display:grid;gap:10px;padding:24px;align-content:start}
-.step + .step{border-left:1px solid var(--line)}
-@media(max-width:820px){.step + .step{border-left:0;border-top:1px solid var(--line)}}
-.step .n{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--accent)}
-.step p{color:var(--muted);font-size:15px}
+/* sections */
+section{padding-block:72px}
+section.alt{background:var(--ground-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:900px){section{padding-block:56px}}
+.sec-head{display:grid;gap:12px;max-width:40em;margin-bottom:36px}
+.sec-head .lede{font-size:17px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:820px){.cols3{grid-template-columns:1fr}}
+.step{display:grid;gap:10px;align-content:start;padding:24px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:600}
+.step p{font-size:15px;color:var(--text)}
 
-.why{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-@media(max-width:820px){.why{grid-template-columns:1fr}}
-.why blockquote{margin:0;padding:26px 28px;border:1px solid var(--line);border-top:2px solid var(--accent);font-family:Fraunces,serif;font-variation-settings:"opsz" 72,"SOFT" 30;font-style:italic;font-size:22px;line-height:1.35}
-.why blockquote cite{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:14px}
-.why ul{margin:0;padding-left:0;list-style:none;display:grid;gap:12px;color:var(--muted);font-size:15px;counter-reset:w}
-.why ul li{padding-left:34px;position:relative;counter-increment:w}
-.why ul li::before{content:counter(w,decimal-leading-zero);position:absolute;left:0;top:.15em;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent)}
-.why ul strong{color:var(--ink);font-weight:600}
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:820px){.why{grid-template-columns:1fr;gap:28px}}
+.why blockquote{margin:0;padding:26px 28px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--navy);border-radius:0 10px 10px 0;font-family:Newsreader,serif;font-size:21px;line-height:1.4;color:var(--ink);font-variation-settings:"opsz" 24}
+.why blockquote cite{display:block;font-style:normal;font-family:"Instrument Sans",sans-serif;font-size:13px;color:var(--muted);margin-top:12px}
+.why ul{margin:0;padding:0;list-style:none;display:grid;gap:14px;font-size:15px}
+.why li{padding-left:28px;position:relative}
+.why li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border-radius:50%;background:var(--ok-bg);border:1px solid #A6F4C5}
+.why li::after{content:"";position:absolute;left:5px;top:.35em;width:5px;height:9px;border:solid var(--ok);border-width:0 2px 2px 0;transform:translateY(1px) rotate(45deg)}
+.why strong{color:var(--ink);font-weight:600}
 
-.fit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
-.fit > div{padding:24px;display:grid;gap:12px;align-content:start}
-.fit > div + div{border-left:1px solid var(--line)}
-.fit ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:15px;display:grid;gap:8px}
-.fit .yes h3{color:var(--ok)}
-@media(max-width:640px){.fit{grid-template-columns:1fr}.fit > div + div{border-left:0;border-top:1px solid var(--line)}}
+/* documents */
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.docs{grid-template-columns:1fr}}
+.doc{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:10px;align-items:start}
+.doc svg{width:22px;height:22px;color:var(--accent-2);margin-top:2px}
+.doc h3{font-size:15px}
+.doc p{font-size:14px;color:var(--muted);margin-top:4px}
 
+/* pricing */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
 table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:400}
-td.num{font-family:Fraunces,serif;font-weight:500;font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap}
-td.acc{color:var(--accent);font-weight:500;min-width:14em}
-.tblwrap{overflow-x:auto}
-.foot{font-size:13px;color:var(--muted);margin-top:14px;max-width:48em;font-family:"IBM Plex Mono",monospace;line-height:1.6}
+th,td{text-align:left;padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--ground-2)}
+td.num{font-weight:600;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+td.acc{color:var(--ink);font-weight:500;min-width:15em}
+td.who{color:var(--muted)}
+.foot{font-size:13px;color:var(--muted);margin-top:14px;max-width:52em;line-height:1.6}
 
-.formsec{background:var(--panel)}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;max-width:760px}
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.fit{grid-template-columns:1fr}}
+.fit > div{padding:24px;background:#fff;border:1px solid var(--line);border-radius:10px;display:grid;gap:12px;align-content:start}
+.fit ul{margin:0;padding-left:1.1em;font-size:15px;display:grid;gap:8px;color:var(--text)}
+.fit .yes h3{color:var(--ok)}
+.fit .no h3{color:var(--muted)}
+
+/* team */
+.people{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.people{grid-template-columns:1fr}}
+.person{display:grid;gap:6px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.person h3{font-family:Newsreader,serif;font-weight:500;font-size:24px}
+.person .role{font-size:13px;color:var(--muted);font-weight:500}
+.person p{font-size:15px;margin-top:6px}
+.reg{margin-top:20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted);padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.reg img{height:24px;width:auto}
+
+/* faq */
+details{border-top:1px solid var(--line);padding-block:18px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;font-size:15px;max-width:46em}
+
+/* form */
+.formsec .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+@media(max-width:900px){.formsec .wrap{grid-template-columns:1fr;gap:28px}}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:10px}
 .form .full{grid-column:1/-1}
 .field{display:grid;gap:6px}
-.field label{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.field input,.field select,.field textarea{font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:2px;background:var(--ground);color:var(--ink);width:100%}
-.form .consent{font-size:13px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
-.form .consent input{margin-top:4px;accent-color:var(--accent)}
-.thanks{display:grid;gap:10px;max-width:40em;padding:26px;border:1px solid var(--ok)}
-.demo{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px dashed var(--accent);padding:4px 8px}
+.field label{font-size:13px;font-weight:600;color:var(--ink)}
+.field input,.field select,.field textarea{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-2);border-radius:6px;background:#fff;color:var(--ink);width:100%}
+.form .consent{font-size:13px;color:var(--muted);display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.form .consent input{margin-top:3px}
+.thanks{display:grid;gap:10px;padding:28px;border:1px solid #A6F4C5;background:var(--ok-bg);border-radius:10px}
+.demo{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#B54708;background:#FFFAEB;border:1px solid #FEDF89;padding:4px 8px;border-radius:4px}
+.side{display:grid;gap:18px}
+.side ul{margin:0;padding-left:1.1em;font-size:15px;display:grid;gap:8px}
 @media(max-width:640px){.form{grid-template-columns:1fr}}
 
-.people{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
-@media(max-width:640px){.people{grid-template-columns:1fr}}
-.person{display:grid;gap:8px;padding:24px}
-.person + .person{border-left:1px solid var(--line)}
-@media(max-width:640px){.person + .person{border-left:0;border-top:1px solid var(--line)}}
-.person h3{font-family:Fraunces,serif;font-weight:500;font-size:22px}
-.person .role{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
-.person p{font-size:15px;color:var(--muted)}
-
-details{border-top:1px solid var(--line);padding-block:16px}
-details:last-of-type{border-bottom:1px solid var(--line)}
-summary{cursor:pointer;font-family:Fraunces,serif;font-weight:500;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:16px}
-summary::after{content:"+";font-family:"IBM Plex Mono",monospace;color:var(--accent)}
-details[open] summary::after{content:"–"}
-details p{margin-top:10px;color:var(--muted);font-size:15px;max-width:44em}
-
-footer{padding-block:36px 48px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:grid;gap:14px;font-family:"IBM Plex Mono",monospace;line-height:1.7}
-footer .legal{max-width:70em}
-.ph{background:#2A2410;padding:0 4px;color:var(--accent)}
+footer{padding-block:40px 56px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);background:#fff}
+footer .wrap{display:grid;gap:18px}
+footer .row{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+footer .cir{height:26px;width:auto}
+footer .legal{max-width:72em;line-height:1.65}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <nav class="nav">
-    <a class="logo" href="#top"><i><b></b><b></b><b></b><b></b></i>Doorstack</a>
-    <div class="links">
-      <a href="#how">How it works</a>
-      <a href="#why">Why off-market</a>
-      <a href="#pricing">Volume pricing</a>
-      <a href="#faq">FAQ</a>
-      <a href="#apply">Request access</a>
-    </div>
-  </nav>
-  <div class="reg"><img class="cir" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAroAAACjCAYAAABlu71jAAAmFElEQVR42u2deZxcVZm/n+qkk5A9kBB2ZFUWAQUE3BVnVFBRdnVG0Bkdddx10FHHcd9l3MZlGEdxQVkEF1BRUVRAQBFBQWXfIYQkJGTtrX5/vKd+qVSq6t6qruV253k+n/p00n2r6t5zzz3ne97zLqVlS25BRERERGSyMWATiIiIiIhCV0REREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdERERERGFroiIiIiIQldEREREFLoiIiIiIhONqQ1+Px+YafNIHcrAcmCDTSEiIiITTeiWgLcBJwAjNpHU9I11wOuA39ocIiIiMhGF7g7A3jaP1GENMMtmEBERESaoj27ZphERERERg9FERERERBS6IiIiIiIKXRERERERha6IiIiIiEJXRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiCh0RUREREQUuiIiIiKi0BURERERUeiKiIiIiCh0RUREREQUuiIiIiIirTPVJhBp+ZmpvEpAGRgDRtJrzCYSERFR6IoUlRIwC1gM7ArsBuwMbAdsA8wBphE7IuUkcNcCDwMPAQ8Ad6XXPcCy9PdOMi2d52gS1+X0avU6B6peY8Bwi+PHlHQOo218f7NzGUi/K6W/l7eQxcSU1K6V+zo2zjattOuUqn9Xt+loatPRPj1nlX5c3YdrX9367lKddhpIbTFc8H4yCzgUmAesB36fxpkijaGDHRijBurcm5E+P5Pd7JfjHTeHOzA+TgFmp7luO2AJcFufrrlU0/aV/4+1MmYpdEU2PtzbA48HngQcDOyZHvZZVZNiXkaA1cBS4FbgOuAa4PokgNeN41wPB94MbAVsqPMaSq/hdB6VSWda1c/p6TUj/X9aEukfAW7KcQ57A+8AFqZrWZcm3PVV3z1cI0xLVZNG5VX57hnpNT2dY+XvA1WCbD2wEngwLSBuAW5O/147CfrggtSm+1W16bqq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ql5DaWKpvEZqItWrgzWmp+uaQfgXLiMCBZblLHRxQrIa5TmHcoOAkdpzWAecR3ZJ2kY8mkjVNkS4YqxP5zCa7t1g+p556f5cViAf3emEu8Bjatqz8hqueY01adPpVW1aIrIp/KHN81pM5IGtCNn1qX1HqwwmM1KbLifyQrfqa3cY4ftXqVS1rubelWsmy9qJs1QjEuqJndrjqoXc1Jr2W0dk9LiD1lLAvTAttlZWtdWGqusYq9q5qHzn9PTeWcmydTsRlDRen8zHAc+tEqm1r0o/Gqr6OVKV9aDSf+YQGT1WpGfz4TbcxZ5M+OhW398NVf2o3OA+NbrnWfd4oEqsT21wj1ek8e7BDu6aHN/CuFyqGZMrfWFaavvKM3xPavdVBRij9mCjD33l2qr7+FDV9TWbe2bUjPv3E/7fK1HoikKXXm7TzElCbnvCCX9hEr2z08NaSg/zujT4PwQsIYK6Hky/G7bLiIiIgOnFRIrDWFpdriQsfyIiIsLEs1qJiIiIiCh0RUREREQUuiIiIiIiCl0REREREYWuiIiIiIhCV0REREQUuiIiIiIiCl0REREREYWuiIiIiIhCV0REREREoSsiIiIiotAVEREREYWuiIiIiIhCV0REREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdERERERGFroiIiIgodEVEREREFLoiIiIiIgpdEREREZF+C92STSNNsH+IiIhI4Zla53dl4BfAemDMJpIahoC7bQYREREpOqVlS26xFUREREQEfXRFRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiCh0RUREREShKyIiIiKi0BURERERUeiKiIiIiHSe/weFP9AbkjaBFQAAAABJRU5ErkJggg==" alt="CIR Realty" width="120" height="28"><span><b>Kamil Lalji</b> · REALTOR®</span><span><b>Jonathan Munan</b> · REALTOR®</span></div>
+<div class="topbar"><div class="wrap">
+  <span><b>Kamil Lalji</b> &amp; <b>Jonathan Munan</b>, REALTORS® · CIR Realty, Calgary</span>
+  <span>Licensed under the Real Estate Act of Alberta · Regulated by RECA</span>
+</div></div>
 
-  <header class="hero" id="top">
-    <div class="copy">
-      <span class="eyebrow">Calgary &amp; area · Developer condo inventory · Off-market</span>
-      <h1>Buy condos by the block. <em>Pay wholesale.</em></h1>
-      <p class="lede">Calgary developers are sitting on finished, move-in-ready condos they will not put on the MLS. We match qualified investors to that inventory, four or more units at a time, at the developer's own volume pricing, below its current list price.</p>
-      <div class="cta">
-        <a class="btn primary" href="#apply">Request access</a>
-        <a class="btn" href="#how">How it works</a>
-      </div>
-      <p class="fine">Minimum purchase is four units. Building, unit and pricing details are shared privately with qualified buyers after a short intake call. No individual condos are listed on this site.</p>
-    </div>
+<nav class="nav"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Doorstack home">
+    <i class="mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>
+    Doorstack
+  </a>
+  <div class="links">
+    <a href="#how">How it works</a>
+    <a href="#why">Why off-market</a>
+    <a href="#docs">What you receive</a>
+    <a href="#pricing">Volume pricing</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="right">
+    <img class="cir" src="cir-realty.png" alt="CIR Realty">
+    <a class="btn primary" href="#apply">Book an intake call</a>
+  </div>
+</div></nav>
 
-    <div class="stack" aria-label="Block size illustration">
-      <div class="head">
-        <span class="eyebrow">Example: 60-unit building</span>
-        <span class="eyebrow" id="legend">■ your block</span>
-      </div>
-      <div class="grid" id="grid" aria-hidden="true"></div>
-      <div class="ctl">
-        <label for="doors"><span>Units in your block</span><span id="doorsOut">4 units</span></label>
-        <input type="range" id="doors" min="1" max="12" value="4" step="1">
-      </div>
-      <div class="readout">
-        <div><div class="k">Developer list</div><div class="v" id="listOut">$1.48M</div></div>
-        <div><div class="k">Volume pricing</div><div class="v acc" id="tierOut">~10% below</div></div>
-        <div><div class="k">Your block</div><div class="v" id="blockOut">$1.33M</div></div>
-      </div>
-      <p class="note" id="note">Illustration only, using a $370,000 example unit. Actual pricing is set by each developer, per building, and confirmed in writing before you commit to anything.</p>
+<header class="hero" id="top"><div class="wrap">
+  <div class="copy">
+    <span class="eyebrow">Off-market developer inventory · Calgary and area</span>
+    <h1>Calgary condos, purchased in blocks of four or more, at developer volume pricing.</h1>
+    <p class="lede">Developers holding finished, move-in-ready condos cannot discount them on the MLS without repricing the whole building. They will discount privately, to one buyer taking several units. We arrange those purchases for qualified investors.</p>
+    <div class="cta">
+      <a class="btn primary" href="#apply">Book an intake call</a>
+      <a class="btn" href="#docs">What you receive before you commit</a>
     </div>
-  </header>
+    <div class="trust">
+      <span><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Developer-direct inventory</span>
+      <span><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full disclosure before any offer</span>
+      <span><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Your own lawyer and lender</span>
+    </div>
+    <p class="fine">No individual properties are listed on this site. Building, unit and pricing details are shared in writing with qualified buyers after an intake call.</p>
+  </div>
 
-  <section id="how">
-    <div class="sec-head">
-      <span class="eyebrow">How it works</span>
-      <h2>Three steps from intake to keys.</h2>
+  <div class="card stack" aria-label="Block size illustration">
+    <div class="head">
+      <span class="t">How block size affects price</span>
+      <span class="l"><span><i></i>Available</span><span><i class="s"></i>Sold</span><span><i class="p"></i>Your block</span></span>
     </div>
-    <div class="cols3">
-      <div class="step"><span class="n">STEP 1</span><h3>Tell us your target</h3><p>Number of units, budget, preferred areas, timeline, and whether you are buying personally or through a corporation. A 20-minute call is usually enough.</p></div>
-      <div class="step"><span class="n">STEP 2</span><h3>We match you to inventory</h3><p>We bring you developer buildings that fit, with unit mix, floor plans, current rents in the building and the developer's volume pricing. Everything stays private and off the MLS.</p></div>
-      <div class="step"><span class="n">STEP 3</span><h3>You buy the block</h3><p>One negotiation, one set of documents per unit, one closing window. Your own lawyer and lender, and a full disclosure package before you sign.</p></div>
+    <div class="grid" id="grid" aria-hidden="true"></div>
+    <div class="seg" role="group" aria-label="Units in your block">
+      <span class="lbl">Units</span>
+      <button type="button" data-n="1">1</button>
+      <button type="button" data-n="4" aria-pressed="true">4</button>
+      <button type="button" data-n="6">6</button>
+      <button type="button" data-n="8">8</button>
+      <button type="button" data-n="12">12</button>
     </div>
-  </section>
+    <div class="readout">
+      <div><div class="k">Developer list price</div><div class="v" id="listOut">$1.48M</div></div>
+      <div><div class="k">Volume pricing</div><div class="v acc" id="tierOut">About 10% below</div></div>
+      <div><div class="k">Block total</div><div class="v" id="blockOut">$1.33M</div></div>
+    </div>
+    <p class="note" id="note">Illustration only, using a $370,000 example unit in a 60-unit building. Pricing is set by each developer, per building, and confirmed in writing before you commit to anything. Prices on new units are subject to GST.</p>
+  </div>
+</div></header>
 
-  <section id="why">
-    <div class="sec-head">
-      <span class="eyebrow">Why this inventory is off-market</span>
-      <h2>Developers cannot discount in public. They can discount in private.</h2>
-    </div>
-    <div class="why">
-      <div>
-        <blockquote>A building with 60 units cannot have one sell for 10% under list on the MLS. The moment it does, every other unit in the building is worth less, and every buyer who already paid full price knows it.<cite>The developer's problem, in one sentence</cite></blockquote>
-      </div>
-      <ul>
-        <li><strong>Finished inventory costs money every month.</strong> Carrying costs, condo fees and financing on unsold units push developers to move volume quietly rather than list unit by unit.</li>
-        <li><strong>A public price cut is permanent.</strong> Listing history is visible to every future buyer and appraiser. A private block sale is not.</li>
-        <li><strong>Volume buyers solve the problem in one transaction.</strong> Four, eight or twelve units to one buyer clears inventory without touching the building's public pricing.</li>
-        <li><strong>That is the trade.</strong> You take on multiple units at once. In exchange you get pricing a single retail buyer will never be offered.</li>
-      </ul>
-    </div>
-  </section>
+<section id="how"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">How it works</span>
+    <h2>A defined process, from first call to closing.</h2>
+  </div>
+  <div class="cols3">
+    <div class="step"><span class="n">1</span><h3>Intake call</h3><p>Twenty minutes on your target: number of units, budget, preferred areas, timeline, and whether you are buying personally or through a corporation. Before we collect anything confidential, you receive the written disclosures RECA requires.</p></div>
+    <div class="step"><span class="n">2</span><h3>Written inventory package</h3><p>Buildings that fit, with unit mix, floor plans, current rents where the developer can share them, and the developer's written volume pricing. Everything in writing, nothing on the MLS.</p></div>
+    <div class="step"><span class="n">3</span><h3>One negotiation, one closing window</h3><p>A single negotiation with the developer, standard purchase documents for each unit, and a coordinated closing. Your own lawyer, lender and inspector throughout.</p></div>
+  </div>
+</div></section>
 
-  <section id="pricing">
-    <div class="sec-head">
-      <span class="eyebrow">Volume pricing</span>
-      <h2>Bigger block, better price.</h2>
-      <p class="lede" style="font-size:17px">Typical structure we see from Calgary developers today. Every building is priced individually, and the developer's written offer is the only number that counts.</p>
-    </div>
-    <div class="tblwrap">
-      <table>
-        <thead><tr><th>Block size</th><th>Typical pricing</th><th>Who it usually suits</th></tr></thead>
-        <tbody>
-          <tr><td class="num">4–5 units</td><td class="acc">Developer volume pricing, typically about 10% below its current list price</td><td>Individual investors adding a rental portfolio in one move; family offices testing Calgary.</td></tr>
-          <tr><td class="num">6–9 units</td><td class="acc">Typically 10–12% below current list, sometimes as developer incentives</td><td>Established landlords, corporate housing operators, investor groups buying together.</td></tr>
-          <tr><td class="num">10+ units</td><td class="acc">Negotiated directly with the developer</td><td>Funds, REITs and rental operators taking a floor or a full phase.</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="foot">All discounts and incentives are offered by the developer, subject to its written terms, and are not offered by Doorstack, its associates or their brokerages. Ranges are illustrative and based on recent developer offers, not a guarantee. Developer incentives may include fees, parking, storage, upgrades or deposit structure rather than price. Doorstack does not provide investment, tax or legal advice and does not project or guarantee rents, returns or resale values.</p>
-  </section>
+<section class="alt" id="why"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Why this inventory is off-market</span>
+    <h2>Developers cannot discount in public. They can discount in private.</h2>
+  </div>
+  <div class="why">
+    <blockquote>A 60-unit building cannot have one unit sell 10% under list on the MLS. The moment it does, every unsold unit is worth less, and every buyer who paid full price knows it.<cite>The developer's problem, in one sentence</cite></blockquote>
+    <ul>
+      <li><strong>Finished inventory costs money every month.</strong> Carrying costs, condo fees and financing on unsold units push developers to move volume quietly rather than list unit by unit.</li>
+      <li><strong>A public price cut is permanent.</strong> Listing history is visible to every future buyer and appraiser. A private block sale is not.</li>
+      <li><strong>One volume buyer solves it in one transaction.</strong> Four, eight or twelve units to one purchaser clears inventory without touching the building's public pricing.</li>
+      <li><strong>That is the trade.</strong> You take on several units at once. In exchange you get pricing a single retail buyer will not be offered.</li>
+    </ul>
+  </div>
+</div></section>
 
-  <section id="fit">
-    <div class="sec-head">
-      <span class="eyebrow">Fit</span>
-      <h2>Who this is for, and who it is not for.</h2>
-    </div>
-    <div class="fit">
-      <div class="yes">
-        <h3>A good fit</h3>
-        <ul>
-          <li>Investors who can take on four or more units in one purchase</li>
-          <li>Buyers with financing or capital already in place, or arranging it now</li>
-          <li>Landlords, corporate housing and furnished-rental operators expanding in Calgary</li>
-          <li>Family offices, investor groups and funds looking for scale without an MLS bidding war</li>
-          <li>Canadian citizens, permanent residents and Canadian-controlled corporations</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Not a fit</h3>
-        <ul>
-          <li>Buyers looking for a single condo to live in or rent out</li>
-          <li>Anyone expecting to see addresses and prices before a conversation</li>
-          <li>Buyers who need a guaranteed return or a rental guarantee to proceed</li>
-          <li>Purchasers currently restricted under Canada's foreign-buyer rules</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section id="docs"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">What you receive before you commit</span>
+    <h2>Everything in writing, before any offer.</h2>
+    <p class="lede">Every unit in a block purchase is a separate purchase under Alberta's Condominium Property Act, with the same protections a retail buyer gets.</p>
+  </div>
+  <div class="docs">
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7z" stroke="currentColor" stroke-width="1.6"/><path d="M14 3v5h5M10 13h6M10 17h6" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Developer's written volume pricing</h3><p>Unit list, list prices and the block pricing, signed off by the developer, so every number can be verified.</p></div></div>
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Condominium disclosure package</h3><p>Purchase agreement, condo plan, bylaws, budget, management agreements and warranty, as the Act requires, for each unit.</p></div></div>
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><div><h3>Ten-day rescission right</h3><p>You can withdraw within ten days of receiving the full package, on every unit, with your deposit returned.</p></div></div>
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9l8-5 8 5v10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Current rents in the building</h3><p>Where the developer can share them, actual leases in place, so your underwriting starts from real numbers, not projections.</p></div></div>
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 4.5-3.5 7.5-8 9-4.5-1.5-8-4.5-8-9V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><div><h3>New home warranty</h3><p>Coverage under Alberta's New Home Buyer Protection program on new units, with the warranty start dates stated.</p></div></div>
+    <div class="doc"><svg viewBox="0 0 24 24" fill="none"><path d="M5 20h14M7 20V9h10v11M9 6h6v3H9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><div><h3>RECA relationship disclosures</h3><p>Who we represent, how we are paid by the developer, and any conflict of interest, given to you in writing and acknowledged before we proceed.</p></div></div>
+  </div>
+</div></section>
 
-  <section class="formsec" id="apply">
-    <div class="sec-head">
-      <span class="eyebrow">Request access</span>
-      <h2>Tell us what you are looking for.</h2>
-      <p class="lede" style="font-size:17px">We reply within one business day to book an intake call. Inventory details are shared only after that call.</p>
-      <span class="demo">Demo form. Not connected yet.</span>
-    </div>
-    <form class="form" id="lead" novalidate>
-      <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
-      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-      <div class="field"><label for="f-units">Units you would consider</label>
-        <select id="f-units" name="units"><option>4–5</option><option>6–9</option><option>10+</option><option>Not sure yet</option></select></div>
-      <div class="field"><label for="f-budget">Total budget</label>
-        <select id="f-budget" name="budget"><option>Under $1.5M</option><option>$1.5M – $3M</option><option>$3M – $6M</option><option>Over $6M</option></select></div>
-      <div class="field"><label for="f-when">Timeline</label>
-        <select id="f-when" name="timeline"><option>Next 90 days</option><option>3–6 months</option><option>6–12 months</option><option>Researching</option></select></div>
-      <div class="field full"><label for="f-type">Buying as</label>
-        <select id="f-type" name="buyer"><option>Individual</option><option>Corporation / holding company</option><option>Investor group</option><option>Fund / institution</option></select></div>
-      <div class="field full"><label for="f-notes">Anything else (optional)</label><textarea id="f-notes" name="notes" rows="3" placeholder="Preferred areas, unit types, financing status…"></textarea></div>
-      <label class="consent full"><input type="checkbox" id="f-consent" required> I agree to be contacted about developer condo inventory by Kamil Lalji and Jonathan Munan of CIR Realty, and to my details being shared with developers whose inventory fits my request. I understand no properties are being offered for sale on this page.</label>
-      <div class="full"><button class="btn primary" type="submit">Request access</button></div>
-    </form>
-    <div class="thanks" id="thanks" hidden>
-      <h3>Thanks. We will be in touch within one business day.</h3>
-      <p style="color:var(--muted)">Demo only: nothing was sent. On the live site this will go straight to the team's inbox and CRM.</p>
-    </div>
-  </section>
+<section class="alt" id="pricing"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Volume pricing</span>
+    <h2>Typical structure from Calgary developers today.</h2>
+    <p class="lede">Every building is priced individually. The developer's written offer is the only number that counts.</p>
+  </div>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Block size</th><th>Typical developer pricing</th><th>Who it usually suits</th></tr></thead>
+      <tbody>
+        <tr><td class="num">4 to 5 units</td><td class="acc">About 10% below the developer's current list price</td><td class="who">Individual investors adding a rental portfolio in one move; family offices entering Calgary.</td></tr>
+        <tr><td class="num">6 to 9 units</td><td class="acc">Typically 10 to 12% below current list, sometimes as developer incentives</td><td class="who">Established landlords, corporate housing operators, investor groups buying together.</td></tr>
+        <tr><td class="num">10 or more</td><td class="acc">Negotiated directly with the developer</td><td class="who">Funds, REITs and rental operators taking a floor or a full phase.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="foot">All discounts and incentives are offered by the developer, subject to its written terms, and are not offered by Doorstack, its REALTORS® or CIR Realty. Ranges are illustrative and based on recent developer offers, not a guarantee. Developer incentives may include fees, parking, storage, upgrades or deposit structure rather than price. Doorstack does not provide investment, tax or legal advice and does not project or guarantee rents, returns or resale values.</p>
+</div></section>
 
-  <section id="team">
-    <div class="sec-head">
-      <span class="eyebrow">Who you are dealing with</span>
-      <h2>Two licensed Calgary agents. One developer network.</h2>
-    </div>
-    <div class="people">
-      <div class="person">
-        <h3>Kamil Lalji</h3>
-        <span class="role">REALTOR® · CIR Realty, Calgary</span>
-        <p>Developer relationships across Calgary and surrounding communities. Kamil sources the inventory and negotiates block pricing directly with builders.</p>
-      </div>
-      <div class="person">
-        <h3>Jonathan Munan</h3>
-        <span class="role">REALTOR® · CIR Realty, Calgary</span>
-        <p>Investor intake, matching and transaction management. Jonathan runs your file from first call to closing.</p>
-      </div>
-    </div>
-  </section>
+<section id="fit"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Fit</span>
+    <h2>Who this is for, and who it is not for.</h2>
+  </div>
+  <div class="fit">
+    <div class="yes"><h3>A good fit</h3><ul>
+      <li>Investors who can take on four or more units in one purchase</li>
+      <li>Buyers with financing or capital in place, or arranging it now</li>
+      <li>Landlords, corporate housing and furnished-rental operators expanding in Calgary</li>
+      <li>Family offices, investor groups and funds seeking scale without an MLS bidding process</li>
+      <li>Canadian citizens, permanent residents and Canadian-controlled corporations</li>
+    </ul></div>
+    <div class="no"><h3>Not a fit</h3><ul>
+      <li>Buyers looking for a single condo to live in or rent out</li>
+      <li>Anyone expecting addresses and prices before a conversation</li>
+      <li>Buyers who need a guaranteed return or a rental guarantee to proceed</li>
+      <li>Purchasers currently restricted under Canada's foreign-buyer rules</li>
+    </ul></div>
+  </div>
+</div></section>
 
-  <section id="faq">
-    <div class="sec-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Straight answers.</h2>
-    </div>
-    <details open><summary>Why can't I see the buildings and prices on this site?</summary><p>Because the developers need it that way. Public pricing below list would affect every other unit in their buildings. We share full details, in writing, once we know what you are looking for and that you can transact.</p></details>
-    <details><summary>Are these new condos or resale?</summary><p>Mostly developer-owned inventory: newly completed or recently completed units that were never sold, plus some developer-held rental stock. New units come with the developer's disclosure package and warranty coverage under Alberta's New Home Buyer Protection program, and GST applies to new units.</p></details>
-    <details><summary>Do I have to buy the whole block from one building?</summary><p>Usually the pricing is tied to volume in one building, because that is what solves the developer's problem. Some developers will price across two of their projects. We will tell you what is on the table.</p></details>
-    <details><summary>Who pays you?</summary><p>Commission is paid by the developer, as with any new-construction purchase. Before we collect any confidential information from you, we give you the written disclosure the Real Estate Council of Alberta requires: who we represent, how we are paid, and any conflicts of interest.</p></details>
-    <details><summary>Can I use my own lawyer, lender and inspector?</summary><p>Yes, and you should. We will coordinate with them and can refer professionals who handle multi-unit closings if you need names.</p></details>
-    <details><summary>Is there a guaranteed rent or return?</summary><p>No. We do not offer rental guarantees, projected returns or investment advice. We provide current rents in the building where the developer can share them and leave the underwriting to you and your advisors.</p></details>
-  </section>
+<section class="alt" id="team"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Who you are dealing with</span>
+    <h2>Two licensed Calgary REALTORS®. One developer network.</h2>
+  </div>
+  <div class="people">
+    <div class="person"><h3>Kamil Lalji</h3><span class="role">REALTOR® · CIR Realty, Calgary</span><p>Developer relationships across Calgary and surrounding communities. Kamil sources the inventory and negotiates block pricing directly with builders.</p></div>
+    <div class="person"><h3>Jonathan Munan</h3><span class="role">REALTOR® · CIR Realty, Calgary</span><p>Investor intake, matching and transaction management. Jonathan runs your file from first call to closing.</p></div>
+  </div>
+  <div class="reg"><img src="cir-realty.png" alt="CIR Realty"><span>Both REALTORS® are licensed with CIR Realty, Calgary, Alberta, and regulated by the Real Estate Council of Alberta. Doorstack is a marketing name, not a brokerage.</span></div>
+</div></section>
 
-  <footer>
-    <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap"><div class="logo" style="font-size:18px"><i><b></b><b></b><b></b><b></b></i>Doorstack</div><img class="cir" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAroAAACjCAYAAABlu71jAAAmFElEQVR42u2deZxcVZm/n+qkk5A9kBB2ZFUWAQUE3BVnVFBRdnVG0Bkdddx10FHHcd9l3MZlGEdxQVkEF1BRUVRAQBFBQWXfIYQkJGTtrX5/vKd+qVSq6t6qruV253k+n/p00n2r6t5zzz3ne97zLqVlS25BRERERGSyMWATiIiIiIhCV0REREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdERERERGFroiIiIiIQldEREREFLoiIiIiIhONqQ1+Px+YafNIHcrAcmCDTSEiIiITTeiWgLcBJwAjNpHU9I11wOuA39ocIiIiMhGF7g7A3jaP1GENMMtmEBERESaoj27ZphERERERg9FERERERBS6IiIiIiIKXRERERERha6IiIiIiEJXRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiCh0RUREREQUuiIiIiKi0BURERERUeiKiIiIiCh0RUREREQUuiIiIiIirTPVJhBp+ZmpvEpAGRgDRtJrzCYSERFR6IoUlRIwC1gM7ArsBuwMbAdsA8wBphE7IuUkcNcCDwMPAQ8Ad6XXPcCy9PdOMi2d52gS1+X0avU6B6peY8Bwi+PHlHQOo218f7NzGUi/K6W/l7eQxcSU1K6V+zo2zjattOuUqn9Xt+loatPRPj1nlX5c3YdrX9367lKddhpIbTFc8H4yCzgUmAesB36fxpkijaGDHRijBurcm5E+P5Pd7JfjHTeHOzA+TgFmp7luO2AJcFufrrlU0/aV/4+1MmYpdEU2PtzbA48HngQcDOyZHvZZVZNiXkaA1cBS4FbgOuAa4PokgNeN41wPB94MbAVsqPMaSq/hdB6VSWda1c/p6TUj/X9aEukfAW7KcQ57A+8AFqZrWZcm3PVV3z1cI0xLVZNG5VX57hnpNT2dY+XvA1WCbD2wEngwLSBuAW5O/147CfrggtSm+1W16bqq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ql5DaWKpvEZqItWrgzWmp+uaQfgXLiMCBZblLHRxQrIa5TmHcoOAkdpzWAecR3ZJ2kY8mkjVNkS4YqxP5zCa7t1g+p556f5cViAf3emEu8Bjatqz8hqueY01adPpVW1aIrIp/KHN81pM5IGtCNn1qX1HqwwmM1KbLifyQrfqa3cY4ftXqVS1rubelWsmy9qJs1QjEuqJndrjqoXc1Jr2W0dk9LiD1lLAvTAttlZWtdWGqusYq9q5qHzn9PTeWcmydTsRlDRen8zHAc+tEqm1r0o/Gqr6OVKV9aDSf+YQGT1WpGfz4TbcxZ5M+OhW398NVf2o3OA+NbrnWfd4oEqsT21wj1ek8e7BDu6aHN/CuFyqGZMrfWFaavvKM3xPavdVBRij9mCjD33l2qr7+FDV9TWbe2bUjPv3E/7fK1HoikKXXm7TzElCbnvCCX9hEr2z08NaSg/zujT4PwQsIYK6Hky/G7bLiIiIgOnFRIrDWFpdriQsfyIiIsLEs1qJiIiIiCh0RUREREQUuiIiIiIiCl0REREREYWuiIiIiIhCV0REREQUuiIiIiIiCl0REREREYWuiIiIiIhCV0REREREoSsiIiIiotAVEREREYWuiIiIiIhCV0REREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREoSsiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiotAVEREREVHoioiIiIgodEVEREREFLoiIiIiIgpdERERERGFroiIiIgodEVEREREFLoiIiIiIgpdEREREZF+C92STSNNsH+IiIhI4Zla53dl4BfAemDMJpIahoC7bQYREREpOqVlS26xFUREREQEfXRFRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXRERERBS6IiIiIiIKXRERERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERha6IiIiIiEJXREREREShKyIiIiKi0BURERERUeiKiIiIiCh0RUREREShKyIiIiKi0BURERERUeiKiIiIiHSe/weFP9AbkjaBFQAAAABJRU5ErkJggg==" alt="CIR Realty" width="150" height="35"></div>
-    <div class="legal">
-      Doorstack is a marketing name used by Kamil Lalji and Jonathan Munan, licensed real estate professionals with CIR Realty, Calgary, Alberta, regulated by the Real Estate Council of Alberta. Doorstack is not a brokerage. Nothing on this page is an offer to sell any specific property, an appraisal, or investment, legal or tax advice. Pricing examples are illustrative; any discount is the developer's, and only a developer's written offer sets price. Prices on new units are subject to GST. Purchases are not available to persons restricted under the federal Prohibition on the Purchase of Residential Property by Non-Canadians Act while it remains in force. Properties are located in Calgary, Alberta and surrounding communities.
-    </div>
-    <div>© 2026 Doorstack · Calgary, Alberta</div>
-  </footer>
-</div>
+<section id="faq"><div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">FAQ</span>
+    <h2>Straight answers.</h2>
+  </div>
+  <details open><summary>Why can't I see the buildings and prices on this site?</summary><p>Because the developers need it that way. Public pricing below list would affect every other unit in their buildings. We share full details, in writing, once we know what you are looking for and that you can transact.</p></details>
+  <details><summary>Are these new condos or resale?</summary><p>Mostly developer-owned inventory: newly completed or recently completed units that were never sold, plus some developer-held rental stock. New units come with the developer's disclosure package and warranty coverage under Alberta's New Home Buyer Protection program, and GST applies to new units.</p></details>
+  <details><summary>Do I have to buy the whole block from one building?</summary><p>Usually the pricing is tied to volume in one building, because that is what solves the developer's problem. Some developers will price across two of their projects. We will tell you what is on the table.</p></details>
+  <details><summary>Who pays you?</summary><p>Commission is paid by the developer, as with any new-construction purchase. Before we collect any confidential information from you, we give you the written disclosure the Real Estate Council of Alberta requires: who we represent, how we are paid, and any conflicts of interest.</p></details>
+  <details><summary>Can I use my own lawyer, lender and inspector?</summary><p>Yes, and you should. We will coordinate with them and can refer professionals who handle multi-unit closings if you need names.</p></details>
+  <details><summary>Is there a guaranteed rent or return?</summary><p>No. We do not offer rental guarantees, projected returns or investment advice. We provide current rents in the building where the developer can share them and leave the underwriting to you and your advisors.</p></details>
+</div></section>
+
+<section class="alt formsec" id="apply"><div class="wrap">
+  <div class="side">
+    <span class="eyebrow">Book an intake call</span>
+    <h2>Tell us what you are looking for.</h2>
+    <p class="lede" style="font-size:16px">We reply within one business day to book a twenty-minute call. Inventory details are shared only after that call and the required written disclosures.</p>
+    <ul>
+      <li>No obligation and no fee to talk</li>
+      <li>Your information stays within CIR Realty until you ask us to approach a developer</li>
+      <li>You decide which buildings, if any, you want to see</li>
+    </ul>
+    <span class="demo">Demo form. Not connected yet.</span>
+  </div>
+  <form class="form" id="lead" novalidate>
+    <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+    <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+    <div class="field"><label for="f-units">Units you would consider</label>
+      <select id="f-units" name="units"><option>4 to 5</option><option>6 to 9</option><option>10 or more</option><option>Not sure yet</option></select></div>
+    <div class="field"><label for="f-when">Timeline</label>
+      <select id="f-when" name="timeline"><option>Next 90 days</option><option>3 to 6 months</option><option>6 to 12 months</option><option>Researching</option></select></div>
+    <div class="field"><label for="f-type">Buying as</label>
+      <select id="f-type" name="buyer"><option>Individual</option><option>Corporation or holding company</option><option>Investor group</option><option>Fund or institution</option></select></div>
+    <div class="field full"><label for="f-notes">Anything else (optional)</label><textarea id="f-notes" name="notes" rows="3" placeholder="Preferred areas, unit types, financing status"></textarea></div>
+    <label class="consent full"><input type="checkbox" id="f-consent" required> I agree to be contacted about developer condo inventory by Kamil Lalji and Jonathan Munan of CIR Realty, and to my details being shared with developers whose inventory fits my request. I understand no properties are being offered for sale on this page.</label>
+    <div class="full"><button class="btn primary" type="submit">Request an intake call</button></div>
+  </form>
+  <div class="thanks" id="thanks" hidden>
+    <h3>Thank you. We will be in touch within one business day.</h3>
+    <p style="font-size:14px;color:var(--muted)">Demo only: nothing was sent. On the live site this goes to the team's inbox and CRM.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="row">
+    <a class="logo" href="#top" style="font-size:20px"><i class="mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>Doorstack</a>
+    <img class="cir" src="cir-realty.png" alt="CIR Realty">
+  </div>
+  <p class="legal">Doorstack is a marketing name used by Kamil Lalji and Jonathan Munan, REALTORS® licensed with CIR Realty, Calgary, Alberta, and regulated by the Real Estate Council of Alberta. Doorstack is not a brokerage. Nothing on this page is an offer to sell any specific property, an appraisal, or investment, legal or tax advice. Pricing examples are illustrative; any discount is the developer's, and only a developer's written offer sets price. Prices on new units are subject to GST. Purchases are not available to persons restricted under the federal Prohibition on the Purchase of Residential Property by Non-Canadians Act while it remains in force. Properties are located in Calgary, Alberta and surrounding communities.</p>
+  <p>© 2026 Doorstack · Calgary, Alberta</p>
+</div></footer>
 
 <script>
 (function(){
@@ -333,25 +403,26 @@ footer .legal{max-width:70em}
   var soldIdx=[0,1,2,5,7,8,12,13,17,19,23,24,26,30,31,35,40,43,47,50,53,55,57,59];
   for(var i=0;i<60;i++){var s=document.createElement('span');if(soldIdx.indexOf(i)>-1)s.className='sold';grid.appendChild(s);cells.push(s);}
   var avail=cells.filter(function(c){return !c.classList.contains('sold')});
-  var unit=370000;
-  var range=document.getElementById('doors');
+  var unit=370000, n=4;
   function tier(n){
     if(n<4)return{pct:0,label:'Retail (list)',note:'Blocks start at four units. Single units are sold at the developer\'s retail price through normal channels.'};
-    if(n<=5)return{pct:.10,label:'~10% below'};
-    if(n<=9)return{pct:.11,label:'10–12% below'};
+    if(n<=5)return{pct:.10,label:'About 10% below'};
+    if(n<=9)return{pct:.11,label:'10 to 12% below'};
     return{pct:.12,label:'Negotiated'};
   }
   function money(v){return v>=1e6?'$'+(v/1e6).toFixed(2)+'M':'$'+Math.round(v/1000)+'k';}
+  var base='Illustration only, using a $370,000 example unit in a 60-unit building. Pricing is set by each developer, per building, and confirmed in writing before you commit to anything. Prices on new units are subject to GST.';
   function render(){
-    var n=+range.value,t=tier(n);
+    var t=tier(n);
     avail.forEach(function(c,i){c.classList.toggle('pick',i<n)});
-    document.getElementById('doorsOut').textContent=n+(n===1?' unit':' units');
     document.getElementById('listOut').textContent=money(unit*n);
     document.getElementById('tierOut').textContent=t.label;
     document.getElementById('blockOut').textContent=money(unit*n*(1-t.pct));
-    document.getElementById('note').textContent=t.note||'Illustration only, using a $370,000 example unit. Actual pricing is set by each developer, per building, and confirmed in writing before you commit to anything.';
+    document.getElementById('note').textContent=t.note||base;
   }
-  range.addEventListener('input',render);render();
+  var btns=document.querySelectorAll('.seg button');
+  btns.forEach(function(b){b.addEventListener('click',function(){n=+b.dataset.n;btns.forEach(function(x){x.setAttribute('aria-pressed',x===b)});render();})});
+  render();
 
   var form=document.getElementById('lead');
   form.addEventListener('submit',function(e){
@@ -362,6 +433,5 @@ footer .legal{max-width:70em}
   });
 })();
 </script>
-
 </body>
 </html>
