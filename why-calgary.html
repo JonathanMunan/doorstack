@@ -85,6 +85,14 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .nav-right{display:flex;align-items:center;gap:16px}
 .nav-why{font-weight:700;font-size:.93rem;text-decoration:none;padding:9px 16px;border-radius:999px;background:var(--mint);border:2px solid var(--ink)}
 .nav-why:hover{background:var(--sun)}
+.nav-phone{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.97rem;text-decoration:none;white-space:nowrap}
+.nav-phone:hover{color:var(--cobalt)}
+.nav-links a{white-space:nowrap}
+.nav-links{gap:16px;font-size:.92rem}
+.nav .btn{white-space:nowrap}
+.social{flex-wrap:wrap}
+@media (max-width:1240px){.nav-links{display:none}}
+@media (max-width:700px){.nav-phone{display:none}}
 .nav .btn{padding:10px 18px;font-size:.93rem;box-shadow:3px 3px 0 var(--ink)}
 @media (max-width:980px){.nav-links{display:none}}
 @media (max-width:520px){.nav-why{padding:8px 12px;font-size:.85rem}.nav .btn{display:none}}
@@ -246,8 +254,10 @@ footer p{max-width:100ch}
 /* Mobile sticky CTA */
 .mobile-cta{display:none}
 @media (max-width:700px){
-  .mobile-cta{display:block;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:60}
-  .mobile-cta .btn{width:100%}
+  .mobile-cta{display:flex;gap:10px;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:60}
+  .mobile-cta .btn{padding-left:10px;padding-right:10px;font-size:.95rem;white-space:nowrap}
+  .mobile-cta .btn-primary{flex:1}
+  .mobile-cta .btn-call{flex:1.15;background:var(--paper);color:var(--ink);border:3px solid var(--ink)}
   footer{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
 }
 /* Why Calgary page */
@@ -321,6 +331,7 @@ footer p{max-width:100ch}
       <a href="/why-calgary" aria-current="page">Why Calgary</a>
     </nav>
     <div class="nav-right">
+      <a class="nav-phone" href="tel:+15873169086"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(587) 316-9086</a>
       <a class="nav-why" href="/">Home</a>
       <a class="btn btn-primary" href="/#apply">Book a call</a>
     </div>
@@ -438,7 +449,7 @@ footer p{max-width:100ch}
   <div class="wrap cta-inner">
     <h2>Ready to stack your doors in Calgary?</h2>
     <p class="lede" style="color:#E6E9FF">Tell us your target and we'll show you what developers have on the table, in writing, after a twenty-minute call.</p>
-    <p style="font-weight:600;margin-bottom:24px">Or email us at <a href="mailto:hello@doorstack.ca" style="color:var(--sun)">hello@doorstack.ca</a></p>
+    <p style="font-weight:600;margin-bottom:24px">Call or text <a href="tel:+15873169086" style="color:var(--sun)">(587) 316-9086</a>, or email us at <a href="mailto:hello@doorstack.ca" style="color:var(--sun)">hello@doorstack.ca</a></p>
     <a class="btn btn-primary" href="/#apply">Book an intake call</a>
   </div>
 </section>
@@ -467,6 +478,7 @@ footer p{max-width:100ch}
     <div class="foot-top">
       <a class="logo" href="/"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Doorstack</a>
       <div class="social">
+        <a href="tel:+15873169086">(587) 316-9086</a>
         <a href="mailto:hello@doorstack.ca">hello@doorstack.ca</a>
         <a href="https://instagram.com/doorstack" target="_blank" rel="noopener">Instagram @doorstack</a>
         <a href="/#apply">Book a call</a>
@@ -477,6 +489,6 @@ footer p{max-width:100ch}
   </div>
 </footer>
 
-<div class="mobile-cta"><a class="btn btn-primary" href="/#apply">Book an intake call</a></div>
+<div class="mobile-cta"><a class="btn btn-call" href="tel:+15873169086"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(587) 316-9086</a><a class="btn btn-primary" href="/#apply">Book a call</a></div>
 </body>
 </html>
