@@ -241,6 +241,10 @@ textarea{min-height:96px;resize:vertical}
 .consent input{width:22px;height:22px;flex:0 0 22px;margin-top:2px;accent-color:var(--cobalt)}
 form .btn{width:100%}
 .form-note{font-size:.8rem;color:#5B5F92;margin:12px 0 0;text-align:center}
+.form-done{text-align:center;padding:clamp(24px,5vw,48px) 8px;outline:none}
+.form-done h3{font-size:clamp(1.6rem,3vw,2.1rem);margin:0 0 12px;color:var(--cobalt)}
+.form-done p{margin:0;font-weight:600;line-height:1.5}
+.form-done a{color:var(--cobalt);font-weight:700}
 .hidden{display:none}
 @media (max-width:900px){.apply-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.row{grid-template-columns:1fr}}
@@ -620,13 +624,33 @@ footer p{max-width:100ch}
   priceIn.addEventListener('input', render);
   render();
 
-  if (location.search.indexOf('submitted=1') > -1){
-    var n = document.getElementById('formNote');
-    n.textContent = 'Request received. We will reply from hello@doorstack.ca within one business day to book your call.';
-    n.style.color = '#0B8F63'; n.style.fontWeight = '700';
+  var intake = document.querySelector('form[name="doorstack-intake"]');
+  function showConfirmation(){
+    intake.innerHTML = '<div class="form-done" role="status" tabindex="-1"><h3>Request received.</h3><p>We will reply from <a href="mailto:hello@doorstack.ca">hello@doorstack.ca</a> within one business day to book your call.</p></div>';
+    intake.firstChild.focus({preventScroll: true});
+    intake.scrollIntoView({behavior: 'smooth', block: 'center'});
     if (window.gtag) gtag('event', 'generate_lead', {form_name: 'doorstack-intake'});
     if (window.fbq) fbq('track', 'Lead');
   }
+  intake.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = intake.querySelector('button[type="submit"]');
+    var note = document.getElementById('formNote');
+    btn.disabled = true; btn.textContent = 'Sending...';
+    fetch('/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: new URLSearchParams(new FormData(intake)).toString()
+    }).then(function(r){
+      if (!r.ok) throw new Error('Form post failed: ' + r.status);
+      showConfirmation();
+    }).catch(function(){
+      btn.disabled = false; btn.textContent = 'Request an intake call';
+      note.innerHTML = 'That did not send. Please try again, or email us at <a href="mailto:hello@doorstack.ca">hello@doorstack.ca</a>.';
+      note.style.color = '#C2185B'; note.style.fontWeight = '700';
+    });
+  });
+  if (location.search.indexOf('submitted=1') > -1) showConfirmation();
 })();
 </script>
 </body>
