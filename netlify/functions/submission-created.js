@@ -29,9 +29,11 @@ async function fub(path, body) {
 
 exports.handler = async (event) => {
   const { payload } = JSON.parse(event.body || '{}');
-  if (!payload || payload.form_name !== 'doorstack-intake') {
+  const formName = payload && payload.form_name;
+  if (formName !== 'doorstack-intake' && formName !== 'doorstack-updates') {
     return { statusCode: 200, body: 'ignored' };
   }
+  const isUpdates = formName === 'doorstack-updates';
   if (!process.env.FUB_API_KEY) {
     console.error('FUB_API_KEY is not set; lead not sent to Follow Up Boss', payload.data && payload.data.email);
     return { statusCode: 200, body: 'no key' };
@@ -42,7 +44,9 @@ exports.handler = async (event) => {
   const [firstName, ...rest] = name.split(/\s+/);
   const lastName = rest.join(' ');
 
-  const details = [
+  const details = isUpdates
+    ? 'Signed up for Doorstack inventory update emails (consent box ticked on doorstack.ca).'
+    : [
     `Units: ${d.units || '-'}`,
     `Timeline: ${d.timeline || '-'}`,
     `Buying as: ${d.buying_as || '-'}`,
@@ -54,20 +58,22 @@ exports.handler = async (event) => {
     lastName: lastName || 'Lead',
     emails: d.email ? [{ value: d.email }] : [],
     phones: d.phone ? [{ value: d.phone }] : [],
-    tags: ['Doorstack', 'Investor', `Doorstack ${d.units || 'units unknown'}`],
+    tags: isUpdates
+      ? ['Doorstack', 'Investor', 'Doorstack updates list']
+      : ['Doorstack', 'Investor', `Doorstack ${d.units || 'units unknown'}`],
   };
 
   const ev = await fub('/events', {
     source: 'doorstack.ca',
     system: 'Doorstack-Website',
     type: 'General Inquiry',
-    message: `Doorstack intake request\n${details}`,
+    message: isUpdates ? details : `Doorstack intake request\n${details}`,
     description: details,
     person,
   });
 
   const personId = ev && (ev.personId || (ev.person && ev.person.id) || ev.id);
-  if (personId) {
+  if (personId && !isUpdates) {
     const due = new Date(Date.now() + 60 * 60 * 1000).toISOString();
     try {
       await fub('/tasks', {
