@@ -18,20 +18,20 @@
    "verified": "crra.ca event page and registration page (members $50 seminar / $75 luncheon, non-members $100 / $125)"
   },
   {
-   "title": "Property Deal Network Calgary",
-   "organizer": "Property Deal Network (PDN)",
-   "date": "2026-11-24",
-   "start": "19:00",
-   "end": "22:00",
-   "venue": "Social Beer Haus",
-   "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
+   "title": "Municipal Development Approvals Seminar (Chinese language)",
+   "organizer": "ABDP",
+   "date": "2026-11-21",
+   "start": "10:00",
+   "end": "12:00",
+   "venue": "",
+   "address": "1816A 25 Avenue NE, Calgary, AB T2E 7K1",
    "city": "Calgary",
    "format": "In person",
-   "cost": "Free",
-   "category": "Networking",
-   "summary": "Monthly networking night for investors, developers, lenders and agents to share deals and find partners, with no presentations; ages 25 and up, venue asks attendees to buy a drink.",
-   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-1999739792551",
-   "verified": "Eventbrite Calgary listing (Tue Nov 24, 7 pm) and organizer's Skiddle listing (7 to 10 pm, 4th Tuesday monthly except December)"
+   "cost": "See listing",
+   "category": "Workshop",
+   "summary": "Chinese-language seminar from planning practitioners on land use redesignation and development permit applications in Calgary, from pre-application through SDAB appeals.",
+   "url": "https://www.eventbrite.ca/e/2004338680950",
+   "verified": "Eventbrite Calgary listing (Sat Nov 21, 10 am to 12 pm); price not shown, no refunds"
   },
   {
    "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
@@ -50,6 +50,86 @@
    "verified": "ccisouthalberta.com event page"
   },
   {
+   "title": "Property Deal Network Calgary",
+   "organizer": "Property Deal Network (PDN)",
+   "date": "2026-11-24",
+   "start": "19:00",
+   "end": "22:00",
+   "venue": "Social Beer Haus",
+   "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Networking",
+   "summary": "Monthly networking night for investors, developers, lenders and agents to share deals and find partners, with no presentations; ages 25 and up, venue asks attendees to buy a drink.",
+   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-1999739792551",
+   "verified": "Eventbrite Calgary listing (Tue Nov 24, 7 pm) and organizer's Skiddle listing (7 to 10 pm, 4th Tuesday monthly except December)"
+  },
+  {
+   "title": "Condominium Management 101: Directors Education",
+   "organizer": "CCI South Alberta Chapter",
+   "date": "2026-11-30",
+   "start": "18:00",
+   "end": "21:30",
+   "venue": "RJC Engineers",
+   "address": "200, 1816 Crowchild Trail NW, Calgary",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free for members, $295 non-members",
+   "category": "Course",
+   "summary": "Evening course for condo owners and board members on board governance, meetings, AGMs, bylaws and the Condominium Property Act; registration closes Nov 26.",
+   "url": "https://www.ccisouthalberta.com/events/2026/11/30/condominium-management-101-directors-education",
+   "verified": "ccisouthalberta.com event page"
+  },
+  {
+   "title": "Year-End Tax Moves That Matter for Investors",
+   "organizer": "Creative Calgary Meetup (Lions Den Capital Corp.)",
+   "date": "2026-12-01",
+   "start": "17:30",
+   "end": "20:00",
+   "venue": "Lions Den Capital Corp., Suite 305",
+   "address": "1822 10 Avenue SW, Calgary, AB T3C 0J8",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Monthly creative finance meetup for investors with a talk from CPA Irfanali Moledina of RMI LLP on rental deductions, personal versus corporate ownership and what to sort out before December 31.",
+   "url": "https://www.eventbrite.com/e/year-end-tax-moves-that-matter-for-investors-tickets-2004922243401",
+   "verified": "Eventbrite listing header and ticket section show Tue Dec 1, 5:30 to 8 pm (presentation 6 pm); body text also mentions Nov 3, likely left over from a past listing"
+  },
+  {
+   "title": "Tax Advantages From Real Estate Investing",
+   "organizer": "Calgary Real Estate Investment Forum (CREW)",
+   "date": "2026-12-01",
+   "start": "19:00",
+   "end": "",
+   "venue": "Online",
+   "address": "",
+   "city": "Online",
+   "format": "Online",
+   "cost": "Free",
+   "category": "Webinar",
+   "summary": "Online seminar with accountant Michael Oosterhof of Dart Bryant LLP on rental property tax deductions and holding rentals in a corporation, plus a Calgary market and community update.",
+   "url": "https://www.meetup.com/crew-real-estate-investing/events/317482056/",
+   "verified": "Meetup event page (Tue Dec 1, 2026, 7 pm, online, free)"
+  },
+  {
+   "title": "CRRA Annual Christmas Social",
+   "organizer": "Calgary Residential Rental Association (CRRA)",
+   "date": "2026-12-03",
+   "start": "17:00",
+   "end": "20:00",
+   "venue": "Windsor Ballroom, Carriage House Hotel & Conference Centre",
+   "address": "",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "$75 members, $125 non-members",
+   "category": "Networking",
+   "summary": "Year-end networking evening for landlords, property managers and rental industry suppliers with drinks and appetizers.",
+   "url": "https://crra.ca/event/crra-christmas-social/",
+   "verified": "crra.ca events list (Dec 3, 5 to 8 pm), event page (venue) and registration page (prices)"
+  },
+  {
    "title": "Calgary Real Estate Meetup",
    "organizer": "The Canadian Real Estate Investor Podcast",
    "date": "2026-12-08",
@@ -64,6 +144,22 @@
    "summary": "Evening of talks and networking for investors at all levels, with speakers on mortgages, property management and investment strategies.",
    "url": "https://www.eventbrite.ca/e/calgary-real-estate-meetup-tickets-1685434222129",
    "verified": "Organizer's Eventbrite page lists the Calgary meetup on Tuesday, December 8, 2026; start time not confirmed"
+  },
+  {
+   "title": "State of the City",
+   "organizer": "Calgary Chamber",
+   "date": "2026-12-09",
+   "start": "11:30",
+   "end": "13:30",
+   "venue": "Hyatt Regency Calgary",
+   "address": "700 Centre St S, Calgary",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "$139 members, $279 non-members",
+   "category": "Conference",
+   "summary": "Lunch address and fireside chat with Mayor Jeromy Farkas on the City's 2027 to 2030 service plans and budgets and how the City plans to attract investment.",
+   "url": "https://calgarychamber.com/event/state-of-the-city-2026/",
+   "verified": "calgarychamber.com event page"
   },
   {
    "title": "Calgary Real Estate Investor Hub Meetup",
@@ -98,6 +194,38 @@
    "verified": "reincanada.com event page (5:30 pm PT / 6:30 pm MT)"
   },
   {
+   "title": "Real Estate and Business Networking Calgary",
+   "organizer": "Strive Networking",
+   "date": "2027-01-06",
+   "start": "18:00",
+   "end": "20:00",
+   "venue": "Social Beer Haus",
+   "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "See listing",
+   "category": "Networking",
+   "summary": "Evening networking event with a real estate focus that also draws brokers, lenders, contractors and professionals from other industries.",
+   "url": "https://www.eventbrite.com/e/real-estate-and-business-networking-elevating-your-potential-calgary-tickets-2002957414545",
+   "verified": "Eventbrite listing (Wed Jan 6, 2027, 6 to 8 pm); price not shown on Eventbrite, Meetup copy lists $17.99"
+  },
+  {
+   "title": "Calgary Renovation Show",
+   "organizer": "Marketplace Events",
+   "date": "2027-01-15",
+   "start": "12:00",
+   "end": "20:00",
+   "venue": "BMO Centre, Stampede Park",
+   "address": "1912 Flores Ladue Parade SE, Calgary",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "$14 adults ($12 online early bird), children free",
+   "category": "Trade show",
+   "summary": "Three-day home renovation show running January 15 to 17 with contractors and product suppliers, useful for landlords and flippers planning suite or unit upgrades.",
+   "url": "https://calgaryrenovationshow.com/",
+   "verified": "calgaryrenovationshow.com home and show info pages (Fri noon to 8 pm, Sat 10 am to 8 pm, Sun 10 am to 6 pm)"
+  },
+  {
    "title": "CREB Forecast Conference & Tradeshow 2027",
    "organizer": "Calgary Real Estate Board (CREB)",
    "date": "2027-01-19",
@@ -114,6 +242,22 @@
    "verified": "crebforecast.com (non-members $209 in person, $89 online; members $169 early bird to Nov 30, then $189)"
   },
   {
+   "title": "Property Deal Network Calgary",
+   "organizer": "Property Deal Network (PDN)",
+   "date": "2027-01-26",
+   "start": "19:00",
+   "end": "22:00",
+   "venue": "Social Beer Haus",
+   "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Networking",
+   "summary": "Monthly networking night for investors, developers, lenders and agents to share deals and find partners, with no presentations; ages 25 and up, venue asks attendees to buy a drink.",
+   "url": "https://www.meetup.com/propertydealnetwork/events/317107093/",
+   "verified": "Meetup event page (Tue Jan 26, 2027, doors 7 pm Calgary time) and organizer's Skiddle listing (7 to 10 pm)"
+  },
+  {
    "title": "From Flood to Restoration",
    "organizer": "CCI South Alberta Chapter",
    "date": "2027-01-28",
@@ -127,6 +271,22 @@
    "category": "Workshop",
    "summary": "Condo education luncheon on water damage and restoration; venue and pricing not yet posted.",
    "url": "https://www.ccisouthalberta.com/events/2027/01/28/from-flood-to-restoration",
+   "verified": "ccisouthalberta.com event page (details marked coming soon)"
+  },
+  {
+   "title": "When Neighbours Won't Stop: The Legal Toolkit",
+   "organizer": "CCI South Alberta Chapter",
+   "date": "2027-02-25",
+   "start": "11:30",
+   "end": "13:00",
+   "venue": "",
+   "address": "",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "See listing",
+   "category": "Workshop",
+   "summary": "Condo education luncheon on the legal options for dealing with ongoing neighbour disputes; venue and pricing not yet posted.",
+   "url": "https://www.ccisouthalberta.com/events/2027/02/25/when-neighbours-wont-stop-the-legal-toolkit",
    "verified": "ccisouthalberta.com event page (details marked coming soon)"
   }
  ],
@@ -186,6 +346,14 @@
    "venue": "Varies",
    "url": "https://www.ccisouthalberta.com/events-education/luncheons",
    "summary": "Condo education lunches on legal, financial and maintenance topics for owners, boards and managers."
+  },
+  {
+   "title": "Creative Calgary Meetup",
+   "organizer": "Creative Calgary Meetup (Lions Den Capital Corp.)",
+   "schedule": "First Tuesday monthly, 5:30 to 8 pm",
+   "venue": "Lions Den Capital Corp., Suite 305, 1822 10 Avenue SW",
+   "url": "https://www.eventbrite.com/e/year-end-tax-moves-that-matter-for-investors-tickets-2004922243401",
+   "summary": "Free, small investor meetup on creative finance and deal structure with a guest speaker and no pitching."
   }
  ]
 }
