@@ -314,7 +314,8 @@ footer p{max-width:100ch}
 .sources li{margin-bottom:6px}
 
 /* ---- events page ---- */
-.ev-hero{padding:72px 0 28px}
+.ev-hero{padding:64px 0 8px}
+section.ev-main{padding-top:8px}
 .ev-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 26px}
 .chip{font:600 15px/1 "Instrument Sans",sans-serif;padding:10px 16px;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:#fff}
@@ -341,6 +342,29 @@ footer p{max-width:100ch}
 .ev-box input[type=text],.ev-box input[type=email]{width:100%;padding:12px 14px;border:2px solid var(--ink);border-radius:12px;font:inherit}
 .ev-box label.consent{display:flex;gap:10px;font-size:13px;line-height:1.4;margin:6px 0 14px}
 .ev-box .hidden{display:none}
+
+.view-toggle{display:inline-flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden;margin-right:6px}
+.view-toggle button{font:600 15px/1 "Instrument Sans",sans-serif;padding:10px 16px;border:0;background:#fff;color:var(--ink);cursor:pointer}
+.view-toggle button[aria-pressed="true"]{background:var(--cobalt);color:#fff}
+.cal{background:#fff;border:3px solid var(--ink);border-radius:22px;box-shadow:8px 8px 0 var(--ink);padding:16px;margin-bottom:22px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-head h2{font-family:"Bricolage Grotesque",sans-serif;font-size:24px;margin:0}
+.cal-nav{width:42px;height:42px;border-radius:50%;border:2px solid var(--ink);background:#fff;font-size:20px;cursor:pointer;color:var(--ink)}
+.cal-nav:disabled{opacity:.3;cursor:default}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-dow{font-size:12px;font-weight:700;text-align:center;text-transform:uppercase;opacity:.6;padding:4px 0}
+.cal-day{min-height:86px;border-radius:12px;border:1.5px solid #E2E4F5;background:#FAFAFF;padding:6px;text-align:left;font:inherit;color:inherit;cursor:default;display:flex;flex-direction:column;gap:3px;overflow:hidden}
+.cal-day.blank{background:transparent;border-color:transparent}
+.cal-day.past{opacity:.45}
+.cal-day.has{cursor:pointer;background:#fff;border-color:var(--ink)}
+.cal-day.today .n{background:var(--ink);color:#fff;border-radius:999px;padding:0 7px}
+.cal-day.sel{outline:3px solid var(--cobalt);outline-offset:-2px}
+.cal-day .n{font-weight:700;font-size:14px;align-self:flex-start}
+.cal-day .e{font-size:12px;line-height:1.2;background:var(--sun);border-radius:6px;padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cal-day .dots{display:none;gap:3px}
+.cal-day .dots i{width:7px;height:7px;border-radius:50%;background:var(--pop);display:block}
+.cal-detail h3.dh{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;margin:6px 0 12px}
+@media (max-width:760px){.cal{padding:10px}.cal-day{min-height:52px;padding:5px;align-items:center}.cal-day .e{display:none}.cal-day .dots{display:flex}.cal-day .n{align-self:center}}
 @media (max-width:760px){.ev-cta{grid-template-columns:1fr}.ev{grid-template-columns:64px 1fr;gap:12px}.ev-date b{font-size:26px}.ev-box form .row{grid-template-columns:1fr}.ev-updated{margin-left:0;width:100%}}
 </style>
 </head>
@@ -380,16 +404,19 @@ footer p{max-width:100ch}
   </div>
 </section>
 
-<section aria-label="Upcoming events">
+<section aria-label="Upcoming events" class="ev-main">
   <div class="wrap">
     <div class="ev-tools" role="group" aria-label="Filter events">
+      <div class="view-toggle" role="group" aria-label="View"><button data-v="cal" aria-pressed="true">Calendar</button><button data-v="list" aria-pressed="false">List</button></div>
       <button class="chip" data-f="all" aria-pressed="true">All</button>
       <button class="chip" data-f="In person" aria-pressed="false">In person</button>
       <button class="chip" data-f="Online" aria-pressed="false">Online</button>
       <button class="chip" data-f="Free" aria-pressed="false">Free</button>
       <span class="ev-updated" id="evUpdated"></span>
     </div>
-    <div id="evList"><p class="ev-empty">Loading events...</p></div>
+    <div id="evCal" class="cal" aria-label="Event calendar"></div>
+    <div id="evDetail" class="cal-detail"></div>
+    <div id="evList" hidden><p class="ev-empty">Loading events...</p></div>
 
     <h2 class="ev-month" id="regular">Regular groups</h2>
     <p>Groups that meet on a regular schedule. Check their page for the next date.</p>
@@ -472,10 +499,41 @@ footer p{max-width:100ch}
     if(!data.recurring||!data.recurring.length){el.innerHTML='';document.getElementById('regular').style.display='none';el.previousElementSibling.style.display='none';return}
     el.innerHTML=data.recurring.map(function(r){return '<article class="ev"><div><h3>'+esc(r.title)+'</h3><p class="meta">'+esc([r.schedule,r.venue].filter(Boolean).join(' · '))+'<br>'+esc(r.organizer)+'</p>'+(r.summary?'<p>'+esc(r.summary)+'</p>':'')+'<a class="go" href="'+esc(r.url)+'" target="_blank" rel="noopener">Group page &rarr;</a></div></article>'}).join('');
   }
-  document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){filter=b.dataset.f;document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});render()})});
+
+  var view='cal', calY, calM, selDay=null;
+  function filtered(){var t=today();return data.events.filter(function(e){if(e.date<t)return false;if(filter==='all')return true;if(filter==='Free')return /free/i.test(e.cost||'');return (e.format||'').indexOf(filter)>-1||e.format==='Hybrid'})}
+  function card(e){var d=new Date(e.date+'T12:00:00');var time=e.start?t12(e.start)+(e.end?' to '+t12(e.end):''):'';var where=[e.venue,e.format==='Online'?'Online':e.city].filter(Boolean).join(', ');
+    return '<article class="ev"><div class="ev-date"><b>'+d.getDate()+'</b><span>'+MON[d.getMonth()]+'</span></div><div><h3>'+esc(e.title)+'</h3><p class="meta">'+esc([['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()],time,where].filter(Boolean).join(' · '))+'<br>'+esc(e.organizer)+'</p>'+(e.summary?'<p>'+esc(e.summary)+'</p>':'')+'<div class="tags">'+[e.format,e.cost,e.category].filter(Boolean).map(function(x){return '<span class="tag">'+esc(x)+'</span>'}).join('')+' <a class="go" href="'+esc(e.url)+'" target="_blank" rel="noopener">Event page &rarr;</a></div></div></article>'}
+  function renderCal(){
+    var el=document.getElementById('evCal'), ev=filtered(), t=today();
+    if(calY==null){var first=ev[0]?new Date(ev[0].date+'T12:00:00'):new Date();var now=new Date();calY=now.getFullYear();calM=now.getMonth();if(!ev.some(function(e){return e.date.slice(0,7)===calY+'-'+String(calM+1).padStart(2,'0')})&&ev[0]){calY=first.getFullYear();calM=first.getMonth()}}
+    var by={};ev.forEach(function(e){(by[e.date]=by[e.date]||[]).push(e)});
+    var nowM=new Date();var minKey=nowM.getFullYear()*12+nowM.getMonth();var last=ev.length?new Date(ev[ev.length-1].date+'T12:00:00'):nowM;var maxKey=Math.max(minKey,last.getFullYear()*12+last.getMonth());var key=calY*12+calM;
+    var h='<div class="cal-head"><button class="cal-nav" data-m="-1" aria-label="Previous month"'+(key<=minKey?' disabled':'')+'>&lsaquo;</button><h2>'+FULL[calM]+' '+calY+'</h2><button class="cal-nav" data-m="1" aria-label="Next month"'+(key>=maxKey?' disabled':'')+'>&rsaquo;</button></div><div class="cal-grid">';
+    ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(function(d){h+='<div class="cal-dow">'+d+'</div>'});
+    var start=new Date(calY,calM,1).getDay(), days=new Date(calY,calM+1,0).getDate();
+    for(var i=0;i<start;i++)h+='<div class="cal-day blank"></div>';
+    for(var d=1;d<=days;d++){var ds=calY+'-'+String(calM+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');var list=by[ds]||[];
+      var cls='cal-day'+(list.length?' has':'')+(ds<t?' past':'')+(ds===t?' today':'')+(ds===selDay?' sel':'');
+      h+=(list.length?'<button type="button" class="'+cls+'" data-d="'+ds+'" aria-label="'+d+' '+FULL[calM]+', '+list.length+' event'+(list.length>1?'s':'')+'">':'<div class="'+cls+'">')+'<span class="n">'+d+'</span>'+list.slice(0,2).map(function(e){return '<span class="e">'+esc(e.title)+'</span>'}).join('')+(list.length>2?'<span class="e">+'+(list.length-2)+' more</span>':'')+'<span class="dots">'+list.map(function(){return '<i></i>'}).join('')+'</span>'+(list.length?'</button>':'</div>')}
+    el.innerHTML=h+'</div>';
+    el.querySelectorAll('.cal-nav').forEach(function(b){b.addEventListener('click',function(){calM+=+b.dataset.m;if(calM<0){calM=11;calY--}if(calM>11){calM=0;calY++}selDay=null;renderCal();renderDetail()})});
+    el.querySelectorAll('button.cal-day').forEach(function(b){b.addEventListener('click',function(){selDay=b.dataset.d;renderCal();renderDetail();document.getElementById('evDetail').scrollIntoView({behavior:'smooth',block:'nearest'})})});
+  }
+  function renderDetail(){
+    var el=document.getElementById('evDetail'), ev=filtered();
+    var mk=calY+'-'+String(calM+1).padStart(2,'0');
+    var list=selDay?ev.filter(function(e){return e.date===selDay}):ev.filter(function(e){return e.date.slice(0,7)===mk});
+    var title=selDay?(function(){var d=new Date(selDay+'T12:00:00');return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()]+', '+FULL[d.getMonth()]+' '+d.getDate()})():'Coming up in '+FULL[calM];
+    el.innerHTML='<h3 class="dh">'+title+(selDay?' <button class="chip" id="evAll" style="font-size:13px;padding:6px 12px;margin-left:8px">Show whole month</button>':'')+'</h3>'+(list.length?'<div class="ev-list">'+list.map(card).join('')+'</div>':'<p class="ev-empty">No events this month yet. Check the list view or the weekly email.</p>');
+    var a=document.getElementById('evAll');if(a)a.addEventListener('click',function(){selDay=null;renderCal();renderDetail()});
+  }
+  function show(){var c=view==='cal';document.getElementById('evCal').hidden=!c;document.getElementById('evDetail').hidden=!c;document.getElementById('evList').hidden=c;if(c){renderCal();renderDetail()}else{render()}}
+  document.querySelectorAll('.view-toggle button').forEach(function(b){b.addEventListener('click',function(){view=b.dataset.v;document.querySelectorAll('.view-toggle button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});show()})});
+  document.querySelectorAll('.chip[data-f]').forEach(function(b){b.addEventListener('click',function(){filter=b.dataset.f;document.querySelectorAll('.chip[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});selDay=null;show()})});
   fetch('/events.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){data=j;
     if(j.updated){var u=new Date(j.updated+'T12:00:00');document.getElementById('evUpdated').textContent='Updated '+FULL[u.getMonth()]+' '+u.getDate()+', '+u.getFullYear()}
-    render();renderRec()}).catch(function(){document.getElementById('evList').innerHTML='<p class="ev-empty">Events couldn\'t load. Please refresh.</p>'});
+    show();renderRec()}).catch(function(){document.getElementById('evList').innerHTML='<p class="ev-empty">Events couldn\'t load. Please refresh.</p>'});
   if(/subscribed=1/.test(location.search)){var t=document.getElementById('evThanks');if(t){t.style.display='block'}}
   var f=document.querySelector('form[name="doorstack-events"]');
   if(f&&window.fetch){f.addEventListener('submit',function(e){e.preventDefault();fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()}).then(function(){f.querySelector('.row').style.display='none';f.querySelector('.consent').style.display='none';f.querySelector('button').style.display='none';document.getElementById('evThanks').style.display='block';if(window.fbq)fbq('track','CompleteRegistration');if(window.gtag)gtag('event','sign_up',{method:'events_list'})})})}
