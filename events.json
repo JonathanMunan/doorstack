@@ -114,22 +114,6 @@
    "verified": "Eventbrite listing header and ticket section show Tue Dec 1, 5:30 to 8 pm (presentation 6 pm); body text also mentions Nov 3, likely left over from a past listing"
   },
   {
-   "title": "Tax Advantages From Real Estate Investing",
-   "organizer": "Calgary Real Estate Investment Forum (CREW)",
-   "date": "2026-12-01",
-   "start": "19:00",
-   "end": "",
-   "venue": "Online",
-   "address": "",
-   "city": "Online",
-   "format": "Online",
-   "cost": "Free",
-   "category": "Webinar",
-   "summary": "Online seminar with accountant Michael Oosterhof of Dart Bryant LLP on rental property tax deductions and holding rentals in a corporation, plus a Calgary market and community update.",
-   "url": "https://www.meetup.com/crew-real-estate-investing/events/317482056/",
-   "verified": "Meetup event page (Tue Dec 1, 2026, 7 pm, online, free)"
-  },
-  {
    "title": "CRRA Annual Christmas Social",
    "organizer": "Calgary Residential Rental Association (CRRA)",
    "date": "2026-12-03",
@@ -160,22 +144,6 @@
    "summary": "One-hour talk on mortgages, down payments, affordability and the buying process, with a complimentary drink.",
    "url": "https://www.eventbrite.com/e/first-time-home-buyer-information-session-tickets-2004901622724",
    "verified": "Eventbrite listing and API (Sat Dec 5, 2026, 2:30 to 3:30 pm, free)"
-  },
-  {
-   "title": "Calgary First-Time Home Buyer Masterclass",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2026-12-08",
-   "start": "19:00",
-   "end": "20:30",
-   "venue": "Online",
-   "address": "",
-   "city": "Online",
-   "format": "Online",
-   "cost": "Free",
-   "category": "Webinar",
-   "summary": "Free online class for Calgary first-time buyers covering budget, pre-approval, down payment, closing costs, property types, offers and conditions, with Q&A.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-masterclass-tickets-2003790497318",
-   "verified": "Eventbrite series listing and API (monthly Tuesdays, 7 to 8:30 pm Calgary time, online, free)"
   },
   {
    "title": "Calgary Real Estate Meetup",
@@ -226,22 +194,6 @@
    "verified": "Eventbrite Calgary listing (Wed Dec 9, 6:30 pm) and organizer's Eventbrite page (free); topic not yet posted"
   },
   {
-   "title": "REIN Virtual Member Meeting",
-   "organizer": "Real Estate Investment Network (REIN)",
-   "date": "2026-12-15",
-   "start": "18:30",
-   "end": "",
-   "venue": "Zoom",
-   "address": "",
-   "city": "Online",
-   "format": "Online",
-   "cost": "See listing",
-   "category": "Webinar",
-   "summary": "Monthly online member meeting with REIN CEO Patrick Francey; members only, with one-time guest access available through REIN.",
-   "url": "https://m.reincanada.com/event/coaching-mentoring-meeting-december-2026/",
-   "verified": "reincanada.com event page (5:30 pm PT / 6:30 pm MT)"
-  },
-  {
    "title": "Calgary First-Time Home Buyer Club",
    "organizer": "Robert Lamb (licensed Alberta real estate agent)",
    "date": "2026-12-23",
@@ -288,22 +240,6 @@
    "summary": "Portuguese-language mortgage basics seminar for buying a first home in Canada, covering credit, down payment, immigration status, FHSA and the RRSP Home Buyers' Plan.",
    "url": "https://www.eventbrite.ca/e/ano-novo-casa-nova-como-comprar-a-tua-casa-propria-no-canada-tickets-2002831279271",
    "verified": "Eventbrite listing and API (Sat Jan 9, 2027, 1 to 3 pm, free ticket, snack included)"
-  },
-  {
-   "title": "Calgary First-Time Home Buyer Masterclass",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2027-01-12",
-   "start": "19:00",
-   "end": "20:30",
-   "venue": "Online",
-   "address": "",
-   "city": "Online",
-   "format": "Online",
-   "cost": "Free",
-   "category": "Webinar",
-   "summary": "Free online class for Calgary first-time buyers covering budget, pre-approval, down payment, closing costs, property types, offers and conditions, with Q&A.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-masterclass-tickets-2003790498321",
-   "verified": "Eventbrite series listing and API (monthly Tuesdays, 7 to 8:30 pm Calgary time, online, free)"
   },
   {
    "title": "Calgary Renovation Show",
@@ -386,22 +322,6 @@
    "verified": "ccisouthalberta.com event page (details marked coming soon)"
   },
   {
-   "title": "Calgary First-Time Home Buyer Masterclass",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2027-02-09",
-   "start": "19:00",
-   "end": "20:30",
-   "venue": "Online",
-   "address": "",
-   "city": "Online",
-   "format": "Online",
-   "cost": "Free",
-   "category": "Webinar",
-   "summary": "Free online class for Calgary first-time buyers covering budget, pre-approval, down payment, closing costs, property types, offers and conditions, with Q&A.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-masterclass-tickets-2003790499324",
-   "verified": "Eventbrite series listing and API (monthly Tuesdays, 7 to 8:30 pm Calgary time, online, free)"
-  },
-  {
    "title": "Calgary First-Time Home Buyer Club",
    "organizer": "Robert Lamb (licensed Alberta real estate agent)",
    "date": "2027-02-24",
@@ -454,7 +374,7 @@
   {
    "title": "Calgary Real Estate Investment Forum (CREW)",
    "organizer": "Calgary Real Estate Wealth",
-   "schedule": "Online seminars on Tuesday evenings at 7 pm, roughly monthly; in-person Saturday forums a few times a year",
+   "schedule": "In-person Saturday forums a few times a year",
    "venue": "Online; forums at Hotel Blackfoot, 5940 Blackfoot Trail SE",
    "url": "https://www.meetup.com/crew-real-estate-investing/",
    "summary": "Investor education sessions on buying, financing and growing a rental portfolio; in-person forums have been $10."
