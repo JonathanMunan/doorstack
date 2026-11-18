@@ -30,10 +30,11 @@ async function fub(path, body) {
 exports.handler = async (event) => {
   const { payload } = JSON.parse(event.body || '{}');
   const formName = payload && payload.form_name;
-  if (formName !== 'doorstack-intake' && formName !== 'doorstack-updates') {
+  if (formName !== 'doorstack-intake' && formName !== 'doorstack-updates' && formName !== 'doorstack-events') {
     return { statusCode: 200, body: 'ignored' };
   }
-  const isUpdates = formName === 'doorstack-updates';
+  const isEvents = formName === 'doorstack-events';
+  const isUpdates = formName === 'doorstack-updates' || isEvents;
   if (!process.env.FUB_API_KEY) {
     console.error('FUB_API_KEY is not set; lead not sent to Follow Up Boss', payload.data && payload.data.email);
     return { statusCode: 200, body: 'no key' };
@@ -45,7 +46,7 @@ exports.handler = async (event) => {
   const lastName = rest.join(' ');
 
   const details = isUpdates
-    ? 'Signed up for Doorstack inventory update emails (consent box ticked on doorstack.ca).'
+    ? (isEvents ? 'Signed up for the weekly Calgary investor events email and Doorstack updates (consent box ticked on doorstack.ca/events).' : 'Signed up for Doorstack inventory update emails (consent box ticked on doorstack.ca).')
     : [
     `Units: ${d.units || '-'}`,
     `Timeline: ${d.timeline || '-'}`,
@@ -59,7 +60,7 @@ exports.handler = async (event) => {
     emails: d.email ? [{ value: d.email }] : [],
     phones: d.phone ? [{ value: d.phone }] : [],
     tags: isUpdates
-      ? ['Doorstack', 'Investor', 'Doorstack updates list']
+      ? (isEvents ? ['Doorstack', 'Investor', 'Doorstack updates list', 'Doorstack events list'] : ['Doorstack', 'Investor', 'Doorstack updates list'])
       : ['Doorstack', 'Investor', `Doorstack ${d.units || 'units unknown'}`],
   };
 
