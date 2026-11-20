@@ -1,22 +1,6 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "events": [
-  {
-   "title": "CRRA Seminar & Luncheon",
-   "organizer": "Calgary Residential Rental Association (CRRA)",
-   "date": "2026-11-19",
-   "start": "09:00",
-   "end": "13:00",
-   "venue": "Hotel Blackfoot",
-   "address": "5940 Blackfoot Trail SE, Calgary, AB T2H 2B5",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "$50 to $125",
-   "category": "Workshop",
-   "summary": "Morning seminar with arbitrator Shawn Shewchuk on landlord and tenant disputes, then a luncheon talk from RECA's James Porter on common compliance mistakes by Alberta landlords and property managers.",
-   "url": "https://crra.ca/event/seminar-luncheon/",
-   "verified": "crra.ca event page and registration page (members $50 seminar / $75 luncheon, non-members $100 / $125)"
-  },
   {
    "title": "Marda Loop Home and Business Night",
    "organizer": "Setitun Blessing Olawuyi",
@@ -29,9 +13,9 @@
    "format": "In person",
    "cost": "Free",
    "category": "Seminar",
-   "summary": "Evening session on home buying, mortgages, refinancing and business financing for first-time buyers, homeowners and business owners, with food and drinks; registration required and seating is limited.",
+   "summary": "Evening session on home buying, mortgages, refinancing and business financing for first-time buyers, homeowners and business owners, with food and drinks; Eventbrite shows registration as full.",
    "url": "https://www.eventbrite.com/e/marda-loop-home-and-business-night-tickets-2003467046869",
-   "verified": "Eventbrite listing (Fri Nov 20, 6 to 7:30 pm, free spot reservation), checked Nov 19 2026"
+   "verified": "Eventbrite listing and API (Fri Nov 20, 6 to 7:30 pm, free, sold out), checked Nov 20 2026"
   },
   {
    "title": "Municipal Development Approvals Seminar (Chinese language)",
@@ -43,11 +27,11 @@
    "address": "1816A 25 Avenue NE, Calgary, AB T2E 7K1",
    "city": "Calgary",
    "format": "In person",
-   "cost": "See listing",
+   "cost": "$12.06",
    "category": "Workshop",
    "summary": "Chinese-language seminar from planning practitioners on land use redesignation and development permit applications in Calgary, from pre-application through SDAB appeals.",
    "url": "https://www.eventbrite.ca/e/2004338680950",
-   "verified": "Eventbrite Calgary listing (Sat Nov 21, 10 am to 12 pm); price not shown, no refunds"
+   "verified": "Eventbrite listing and API (Sat Nov 21, 10 am to 12 pm, $12.06), checked Nov 20 2026"
   },
   {
    "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
@@ -91,11 +75,11 @@
    "address": "213 10 Ave SW",
    "city": "Calgary",
    "format": "In person",
-   "cost": "See listing",
+   "cost": "From $24.64",
    "category": "Networking",
    "summary": "Business casual networking night for people in Calgary real estate, renovation, interior design and construction.",
    "url": "https://www.eventbrite.ca/e/calgary-real-estate-interior-designer-construction-renovation-ne-tickets-2004738958190",
-   "verified": "Eventbrite listing, checked Nov 19 2026"
+   "verified": "Eventbrite listing and API (Tue Nov 24, 7 to 10 pm, from $24.64 with fees), checked Nov 20 2026"
   },
   {
    "title": "Calgary First-Time Home Buyer Club",
@@ -109,9 +93,9 @@
    "format": "In person",
    "cost": "Free",
    "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A.",
+   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
    "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840046494",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free, registration required)"
+   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
   },
   {
    "title": "Condominium Management 101: Directors Education",
@@ -182,7 +166,7 @@
    "organizer": "The Canadian Real Estate Investor Podcast",
    "date": "2026-12-08",
    "start": "17:00",
-   "end": "",
+   "end": "19:00",
    "venue": "The Canadian Brewhouse (Calgary University District)",
    "address": "3953 University Avenue NW #220, Calgary, AB T3B 6K3",
    "city": "Calgary",
@@ -190,8 +174,8 @@
    "cost": "Free",
    "category": "Meetup",
    "summary": "Evening of talks and networking for investors at all levels, with speakers on mortgages, property management and investment strategies.",
-   "url": "https://www.eventbrite.ca/e/calgary-real-estate-meetup-tickets-1685434222129",
-   "verified": "Eventbrite Calgary search listings show Tue Dec 8, 5 pm, checked Nov 19 2026; event page itself only says multiple dates"
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-meetup-tickets-2001903399959",
+   "verified": "Eventbrite listing and API for this date (Tue Dec 8, 5 to 7 pm, free, on sale), checked Nov 20 2026"
   },
   {
    "title": "State of the City",
@@ -214,7 +198,7 @@
    "organizer": "Calgary Real Estate Investor Hub",
    "date": "2026-12-09",
    "start": "18:30",
-   "end": "",
+   "end": "21:30",
    "venue": "The Hemingway Room",
    "address": "1204 20 Ave SE, Calgary, AB",
    "city": "Calgary",
@@ -222,8 +206,8 @@
    "cost": "Free",
    "category": "Meetup",
    "summary": "Monthly investor meetup with a presentation followed by networking; outside agents and mortgage brokers need the organizer's pre-approval.",
-   "url": "https://www.eventbrite.ca/e/calgary-real-estate-investor-hub-meetup-tickets-419061994707",
-   "verified": "Eventbrite Calgary listing (Wed Dec 9, 6:30 pm) and organizer's Eventbrite page (free); topic not yet posted"
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-investor-hub-meetup-tickets-1981503063002",
+   "verified": "Eventbrite listing and API for this date (Wed Dec 9, 6:30 to 9:30 pm, free, on sale), checked Nov 20 2026; topic not yet posted"
   },
   {
    "title": "Calgary First-Time Home Buyer Club",
@@ -237,9 +221,25 @@
    "format": "In person",
    "cost": "Free",
    "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A.",
+   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
    "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840047497",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free, registration required)"
+   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
+  },
+  {
+   "title": "Calgary Law, Real Estate & Construction Networking Event",
+   "organizer": "Sum of Five",
+   "date": "2026-12-25",
+   "start": "19:00",
+   "end": "21:00",
+   "venue": "Greta Bar",
+   "address": "213 10 Avenue SW, Calgary, AB T2R 0A4",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "$12.19 to $28.25",
+   "category": "Networking",
+   "summary": "Evening networking night for people working in law, real estate and construction; the listing shows December 25, so confirm the date with the organizer before going.",
+   "url": "https://www.eventbrite.ca/e/calgary-law-real-estate-construction-networking-event-tickets-2003405917028",
+   "verified": "Eventbrite listing and API (Fri Dec 25, 2026, 7 to 9 pm, on sale), checked Nov 20 2026; Christmas Day date looks unusual"
   },
   {
    "title": "Real Estate and Business Networking Calgary",
@@ -251,11 +251,11 @@
    "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
    "city": "Calgary",
    "format": "In person",
-   "cost": "See listing",
+   "cost": "From $17.62",
    "category": "Networking",
    "summary": "Evening networking event with a real estate focus that also draws brokers, lenders, contractors and professionals from other industries.",
    "url": "https://www.eventbrite.com/e/real-estate-and-business-networking-elevating-your-potential-calgary-tickets-2002957414545",
-   "verified": "Eventbrite listing (Wed Jan 6, 2027, 6 to 8 pm); price not shown on Eventbrite, Meetup copy lists $17.99"
+   "verified": "Eventbrite listing and API (Wed Jan 6, 2027, 6 to 8 pm, from $17.62), checked Nov 20 2026"
   },
   {
    "title": "Ano Novo, Casa Nova: Como Comprar a Tua Casa Própria no Canadá",
@@ -333,9 +333,9 @@
    "format": "In person",
    "cost": "Free",
    "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A.",
+   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
    "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840048500",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free, registration required)"
+   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
   },
   {
    "title": "From Flood to Restoration",
@@ -365,9 +365,9 @@
    "format": "In person",
    "cost": "Free",
    "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A.",
+   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
    "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840049503",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free, registration required)"
+   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
   },
   {
    "title": "When Neighbours Won't Stop: The Legal Toolkit",
