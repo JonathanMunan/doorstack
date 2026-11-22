@@ -1,38 +1,6 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-22",
  "events": [
-  {
-   "title": "Marda Loop Home and Business Night",
-   "organizer": "Setitun Blessing Olawuyi",
-   "date": "2026-11-20",
-   "start": "18:00",
-   "end": "19:30",
-   "venue": "",
-   "address": "2140 34 Avenue SW, Calgary, AB T2T 5P6",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "Free",
-   "category": "Seminar",
-   "summary": "Evening session on home buying, mortgages, refinancing and business financing for first-time buyers, homeowners and business owners, with food and drinks; Eventbrite shows registration as full.",
-   "url": "https://www.eventbrite.com/e/marda-loop-home-and-business-night-tickets-2003467046869",
-   "verified": "Eventbrite listing and API (Fri Nov 20, 6 to 7:30 pm, free, sold out), checked Nov 20 2026"
-  },
-  {
-   "title": "Municipal Development Approvals Seminar (Chinese language)",
-   "organizer": "ABDP",
-   "date": "2026-11-21",
-   "start": "10:00",
-   "end": "12:00",
-   "venue": "",
-   "address": "1816A 25 Avenue NE, Calgary, AB T2E 7K1",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "$12.06",
-   "category": "Workshop",
-   "summary": "Chinese-language seminar from planning practitioners on land use redesignation and development permit applications in Calgary, from pre-application through SDAB appeals.",
-   "url": "https://www.eventbrite.ca/e/2004338680950",
-   "verified": "Eventbrite listing and API (Sat Nov 21, 10 am to 12 pm, $12.06), checked Nov 20 2026"
-  },
   {
    "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
    "organizer": "CCI South Alberta Chapter",
@@ -62,8 +30,8 @@
    "cost": "Free",
    "category": "Networking",
    "summary": "Monthly networking night for investors, developers, lenders and agents to share deals and find partners, with no presentations; ages 25 and up, venue asks attendees to buy a drink.",
-   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-1999739792551",
-   "verified": "Eventbrite Calgary listing (Tue Nov 24, 7 pm) and organizer's Skiddle listing (7 to 10 pm, 4th Tuesday monthly except December)"
+   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-2000959750478",
+   "verified": "Eventbrite Calgary listing and API (Tue Nov 24, 7 to 10 pm, live), relinked Nov 22 2026 after the earlier listing was taken down; Meetup event page also active"
   },
   {
    "title": "Calgary Real Estate, Interior Designer, Construction & Renovation Networking",
@@ -400,7 +368,7 @@
    "organizer": "Property Deal Network (PDN)",
    "schedule": "Fourth Tuesday monthly except December, 7 to 10 pm",
    "venue": "Social Beer Haus, 220 8 Avenue SW",
-   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-1999739792551",
+   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-2000959750478",
    "summary": "Free deal and partner networking for investors, developers and property professionals, with no presentations."
   },
   {
