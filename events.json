@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "events": [
   {
    "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
@@ -50,20 +50,20 @@
    "verified": "Eventbrite listing and API (Tue Nov 24, 7 to 10 pm, from $24.64 with fees), checked Nov 20 2026"
   },
   {
-   "title": "Calgary First-Time Home Buyer Club",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
+   "title": "Capital Markets Update Fall 2026",
+   "organizer": "ULI Alberta",
    "date": "2026-11-25",
-   "start": "18:30",
-   "end": "20:00",
-   "venue": "cSPACE Marda Loop",
-   "address": "1721 29 Avenue SW, Calgary, AB T2T 6T7",
+   "start": "11:00",
+   "end": "13:30",
+   "venue": "Ampersand, Rooms A&B",
+   "address": "112 4 Ave SW, Calgary, AB T2P 0H3",
    "city": "Calgary",
    "format": "In person",
-   "cost": "Free",
-   "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840046494",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
+   "cost": "$65 members, $90 non-members",
+   "category": "Conference",
+   "summary": "Lunch keynote and panel on interest rates, lender sentiment and where real estate capital is flowing in Alberta, with speakers from IceCap, CMLS, Armco Capital and Boardwalk REIT.",
+   "url": "https://alberta.uli.org/events/detail/F626686E-9014-4F48-9B41-7AF68D595074/",
+   "verified": "alberta.uli.org event page (Wed Nov 25, 11 am to 1:30 pm, agenda and pricing), checked Nov 23 2026"
   },
   {
    "title": "Condominium Management 101: Directors Education",
@@ -178,20 +178,20 @@
    "verified": "Eventbrite listing and API for this date (Wed Dec 9, 6:30 to 9:30 pm, free, on sale), checked Nov 20 2026; topic not yet posted"
   },
   {
-   "title": "Calgary First-Time Home Buyer Club",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2026-12-23",
-   "start": "18:30",
+   "title": "ULI Alberta + DIALOG Calgary Holiday Mixer",
+   "organizer": "ULI Alberta",
+   "date": "2026-12-10",
+   "start": "16:30",
    "end": "20:00",
-   "venue": "cSPACE Marda Loop",
-   "address": "1721 29 Avenue SW, Calgary, AB T2T 6T7",
+   "venue": "DIALOG",
+   "address": "134 11 Ave SE, Suite 300, Calgary, AB T2G 0X5",
    "city": "Calgary",
    "format": "In person",
-   "cost": "Free",
-   "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840047497",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
+   "cost": "$25 members, $40 non-members",
+   "category": "Networking",
+   "summary": "Year-end networking evening for people in Calgary development, commercial real estate and land use, open to non-members.",
+   "url": "https://alberta.uli.org/events/detail/77747A21-F1E7-44B3-A3FE-94D80E84D3C6/",
+   "verified": "alberta.uli.org event page (Thu Dec 10, 4:30 to 8 pm, pricing), checked Nov 23 2026"
   },
   {
    "title": "Calgary Law, Real Estate & Construction Networking Event",
@@ -290,22 +290,6 @@
    "verified": "Meetup event page (Tue Jan 26, 2027, doors 7 pm Calgary time) and organizer's Skiddle listing (7 to 10 pm)"
   },
   {
-   "title": "Calgary First-Time Home Buyer Club",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2027-01-27",
-   "start": "18:30",
-   "end": "20:00",
-   "venue": "cSPACE Marda Loop",
-   "address": "1721 29 Avenue SW, Calgary, AB T2T 6T7",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "Free",
-   "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840048500",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
-  },
-  {
    "title": "From Flood to Restoration",
    "organizer": "CCI South Alberta Chapter",
    "date": "2027-01-28",
@@ -322,20 +306,20 @@
    "verified": "ccisouthalberta.com event page (details marked coming soon)"
   },
   {
-   "title": "Calgary First-Time Home Buyer Club",
-   "organizer": "Robert Lamb (licensed Alberta real estate agent)",
-   "date": "2027-02-24",
-   "start": "18:30",
-   "end": "20:00",
-   "venue": "cSPACE Marda Loop",
-   "address": "1721 29 Avenue SW, Calgary, AB T2T 6T7",
+   "title": "2027 Calgary Emerging Trends Breakfast",
+   "organizer": "ULI Alberta",
+   "date": "2027-02-03",
+   "start": "07:30",
+   "end": "10:30",
+   "venue": "Fairmont Palliser",
+   "address": "133 9 Ave SW, Calgary, AB T2P 2M3",
    "city": "Calgary",
    "format": "In person",
-   "cost": "Free",
-   "category": "Seminar",
-   "summary": "Free monthly session for first-time buyers on affordability, mortgage pre-approval, buyer programs, neighbourhoods and offers, with open Q&A; Eventbrite showed registration as full or closed on Nov 20.",
-   "url": "https://www.eventbrite.ca/e/calgary-first-time-home-buyer-club-tickets-2002840049503",
-   "verified": "Eventbrite series listing and API (monthly Wednesdays, 6:30 to 8 pm, free); API showed sold out / sales ended on Nov 20 2026"
+   "cost": "$135 members, $185 non-members",
+   "category": "Conference",
+   "summary": "Breakfast presentation of the PwC and ULI Emerging Trends in Real Estate 2027 report, covering the outlook for housing, multifamily and commercial property in Calgary and across Canada.",
+   "url": "https://alberta.uli.org/events/detail/76D77B4F-28B2-4DA4-935D-55D1F4B9E10B/",
+   "verified": "alberta.uli.org event page (Wed Feb 3, 2027, 7:30 to 10:30 am, pricing and speakers), checked Nov 23 2026"
   },
   {
    "title": "When Neighbours Won't Stop: The Legal Toolkit",
