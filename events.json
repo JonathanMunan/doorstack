@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "events": [
   {
    "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
@@ -242,6 +242,38 @@
    "verified": "Eventbrite listing and API (Sat Jan 9, 2027, 1 to 3 pm, free ticket, snack included)"
   },
   {
+   "title": "Calgary Real Estate Meetup",
+   "organizer": "The Canadian Real Estate Investor Podcast",
+   "date": "2027-01-12",
+   "start": "17:00",
+   "end": "19:00",
+   "venue": "The Canadian Brewhouse (Calgary University District)",
+   "address": "3953 University Avenue NW #220, Calgary, AB T3B 6K3",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Evening of talks and networking for investors at all levels, with speakers on mortgages, property management and investment strategies.",
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-meetup-tickets-2001903400962",
+   "verified": "Eventbrite series listing and event page for this date (Tue Jan 12, 2027, 5 to 7 pm, free, on sale), checked Nov 24 2026"
+  },
+  {
+   "title": "Calgary Real Estate Investor Hub Meetup",
+   "organizer": "Calgary Real Estate Investor Hub",
+   "date": "2027-01-13",
+   "start": "18:30",
+   "end": "21:30",
+   "venue": "The Hemingway Room",
+   "address": "1204 20 Ave SE, Calgary, AB",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Monthly investor meetup with a presentation followed by networking; outside agents and mortgage brokers need the organizer's pre-approval.",
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-investor-hub-meetup-tickets-1981503064005",
+   "verified": "Eventbrite series listing and event page for this date (Wed Jan 13, 2027, 6:30 to 9:30 pm, free, on sale), checked Nov 24 2026; topic not yet posted"
+  },
+  {
    "title": "Calgary Renovation Show",
    "organizer": "Marketplace Events",
    "date": "2027-01-15",
@@ -320,6 +352,38 @@
    "summary": "Breakfast presentation of the PwC and ULI Emerging Trends in Real Estate 2027 report, covering the outlook for housing, multifamily and commercial property in Calgary and across Canada.",
    "url": "https://alberta.uli.org/events/detail/76D77B4F-28B2-4DA4-935D-55D1F4B9E10B/",
    "verified": "alberta.uli.org event page (Wed Feb 3, 2027, 7:30 to 10:30 am, pricing and speakers), checked Nov 23 2026"
+  },
+  {
+   "title": "Calgary Real Estate Meetup",
+   "organizer": "The Canadian Real Estate Investor Podcast",
+   "date": "2027-02-09",
+   "start": "17:00",
+   "end": "19:00",
+   "venue": "The Canadian Brewhouse (Calgary University District)",
+   "address": "3953 University Avenue NW #220, Calgary, AB T3B 6K3",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Evening of talks and networking for investors at all levels, with speakers on mortgages, property management and investment strategies.",
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-meetup-tickets-2001903401965",
+   "verified": "Eventbrite series listing and event page for this date (Tue Feb 9, 2027, 5 to 7 pm, free, on sale), checked Nov 24 2026"
+  },
+  {
+   "title": "Calgary Real Estate Investor Hub Meetup",
+   "organizer": "Calgary Real Estate Investor Hub",
+   "date": "2027-02-10",
+   "start": "18:30",
+   "end": "21:30",
+   "venue": "The Hemingway Room",
+   "address": "1204 20 Ave SE, Calgary, AB",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Monthly investor meetup with a presentation followed by networking; outside agents and mortgage brokers need the organizer's pre-approval.",
+   "url": "https://www.eventbrite.ca/e/calgary-real-estate-investor-hub-meetup-tickets-1981503065008",
+   "verified": "Eventbrite series listing and event page for this date (Wed Feb 10, 2027, 6:30 to 9:30 pm, free, on sale), checked Nov 24 2026; topic not yet posted"
   },
   {
    "title": "When Neighbours Won't Stop: The Legal Toolkit",
