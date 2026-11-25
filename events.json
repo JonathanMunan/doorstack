@@ -1,54 +1,6 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "events": [
-  {
-   "title": "Liens, Arrears & Collections: From First Notice to Enforcement",
-   "organizer": "CCI South Alberta Chapter",
-   "date": "2026-11-24",
-   "start": "11:30",
-   "end": "13:00",
-   "venue": "Calgary Italian Cultural Centre",
-   "address": "416 1 Ave NE, Calgary",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "$55 members, $65 non-members (plus GST)",
-   "category": "Workshop",
-   "summary": "Lunch session on how condo corporations collect unpaid fees, including liens, mortgage priority, sales and the new chargeback rules; registration closes Nov 23 at 4 pm.",
-   "url": "https://www.ccisouthalberta.com/events/2026/11/24/liens-arrears-collections-from-first-notice-to-enforcement",
-   "verified": "ccisouthalberta.com event page"
-  },
-  {
-   "title": "Property Deal Network Calgary",
-   "organizer": "Property Deal Network (PDN)",
-   "date": "2026-11-24",
-   "start": "19:00",
-   "end": "22:00",
-   "venue": "Social Beer Haus",
-   "address": "220 8 Avenue SW, Calgary, AB T2P 1B5",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "Free",
-   "category": "Networking",
-   "summary": "Monthly networking night for investors, developers, lenders and agents to share deals and find partners, with no presentations; ages 25 and up, venue asks attendees to buy a drink.",
-   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-2000959750478",
-   "verified": "Eventbrite Calgary listing and API (Tue Nov 24, 7 to 10 pm, live), relinked Nov 22 2026 after the earlier listing was taken down; Meetup event page also active"
-  },
-  {
-   "title": "Calgary Real Estate, Interior Designer, Construction & Renovation Networking",
-   "organizer": "Stellar Socials",
-   "date": "2026-11-24",
-   "start": "19:00",
-   "end": "22:00",
-   "venue": "Greta YYC",
-   "address": "213 10 Ave SW",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "From $24.64",
-   "category": "Networking",
-   "summary": "Business casual networking night for people in Calgary real estate, renovation, interior design and construction.",
-   "url": "https://www.eventbrite.ca/e/calgary-real-estate-interior-designer-construction-renovation-ne-tickets-2004738958190",
-   "verified": "Eventbrite listing and API (Tue Nov 24, 7 to 10 pm, from $24.64 with fees), checked Nov 20 2026"
-  },
   {
    "title": "Capital Markets Update Fall 2026",
    "organizer": "ULI Alberta",
@@ -128,6 +80,22 @@
    "summary": "One-hour talk on mortgages, down payments, affordability and the buying process, with a complimentary drink.",
    "url": "https://www.eventbrite.com/e/first-time-home-buyer-information-session-tickets-2004901622724",
    "verified": "Eventbrite listing and API (Sat Dec 5, 2026, 2:30 to 3:30 pm, free)"
+  },
+  {
+   "title": "The Airbnb Reset: What It Will Take to Win in 2027",
+   "organizer": "Wealthy Walls",
+   "date": "2026-12-07",
+   "start": "18:30",
+   "end": "20:30",
+   "venue": "Real District",
+   "address": "#375 7220 Fisher Street SE, Calgary, AB T2H 2H8",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Free",
+   "category": "Meetup",
+   "summary": "Investor networking night with a talk from short-term rental managers Braden Scriven and Jeremy Barrows of Nomadics on new Airbnb rules, competition and what hosts need to change for 2027.",
+   "url": "https://www.eventbrite.ca/e/the-airbnb-reset-what-it-will-take-to-win-in-2027-wealthy-walls-630pm-tickets-2005479816116",
+   "verified": "Eventbrite listing (Mon Dec 7, 6:30 to 8:30 pm, free, on sale) and Meetup event page, checked Nov 25 2026"
   },
   {
    "title": "Calgary Real Estate Meetup",
@@ -416,7 +384,7 @@
    "organizer": "Property Deal Network (PDN)",
    "schedule": "Fourth Tuesday monthly except December, 7 to 10 pm",
    "venue": "Social Beer Haus, 220 8 Avenue SW",
-   "url": "https://www.eventbrite.co.uk/e/property-deal-network-calgary-pdn-property-networking-event-tickets-2000959750478",
+   "url": "https://www.meetup.com/propertydealnetwork/",
    "summary": "Free deal and partner networking for investors, developers and property professionals, with no presentations."
   },
   {
