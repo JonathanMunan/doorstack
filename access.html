@@ -330,6 +330,22 @@ form[data-who="agent"] .only-agent,form[data-who="investor"] .only-investor{disp
 .acc-thanks h3{margin-bottom:6px}
 @media (max-width:900px){.acc-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.who{grid-template-columns:1fr}}
+
+/* Menu button (shows when the full menu doesn't fit) */
+.menu-btn{display:none;align-items:center;gap:8px;font:inherit;font-weight:700;font-size:.93rem;padding:9px 16px;border-radius:999px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);cursor:pointer}
+.menu-btn:hover{background:var(--sun)}
+.menu-ico{display:grid;gap:3px}
+.menu-ico i{display:block;width:16px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+header.menu-open .menu-ico i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+header.menu-open .menu-ico i:nth-child(2){opacity:0}
+header.menu-open .menu-ico i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+@media (max-width:1400px){
+  .menu-btn{display:inline-flex}
+  header.menu-open .nav-links{display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:2px solid var(--ink);box-shadow:0 12px 24px rgba(20,22,77,.12);padding:8px clamp(20px,4vw,40px) 16px;font-size:1.05rem;max-height:calc(100vh - 140px);overflow:auto}
+  header.menu-open .nav-links a{padding:13px 0;border-bottom:1px solid var(--line)}
+  header.menu-open .nav-links a:last-child{border-bottom:0}
+}
+@media (max-width:520px){.menu-btn{padding:8px 12px;font-size:.85rem}}
 </style>
 </head>
 <body id="top">
@@ -341,7 +357,7 @@ form[data-who="agent"] .only-agent,form[data-who="investor"] .only-investor{disp
     <a class="logo" href="/" aria-label="Doorstack home">
       <span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Doorstack
     </a>
-    <nav class="nav-links" aria-label="Main">
+    <nav class="nav-links" id="siteNav" aria-label="Main">
       <a href="/#how">How it works</a>
       <a href="/#why">Why off-market</a>
       <a href="/#pricing">Volume pricing</a>
@@ -353,6 +369,7 @@ form[data-who="agent"] .only-agent,form[data-who="investor"] .only-investor{disp
     <div class="nav-right">
       <a class="nav-phone" href="tel:+15873169086"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(587) 316-9086</a>
       <a class="nav-why" href="/">Home</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><span class="menu-ico" aria-hidden="true"><i></i><i></i><i></i></span>Menu</button>
       <a class="btn btn-primary" href="/#apply">Book a call</a>
     </div>
   </div>
@@ -436,6 +453,16 @@ form[data-who="agent"] .only-agent,form[data-who="investor"] .only-investor{disp
   var q=new URLSearchParams(location.search);
   if(q.get('who')==='investor'){ f.querySelector('input[value="Investor"]').checked=true; f.dataset.who='investor'; }
   if(q.get('joined')==='1'){ document.getElementById('accThanks').style.display='block'; f.style.display='none'; }
+})();
+</script>
+<script>
+(function(){
+  var h=document.querySelector('header'), b=h&&h.querySelector('.menu-btn'); if(!b) return;
+  function set(o){ h.classList.toggle('menu-open',o); b.setAttribute('aria-expanded',o); b.setAttribute('aria-label',o?'Close menu':'Open menu'); }
+  b.addEventListener('click',function(){ set(!h.classList.contains('menu-open')); });
+  h.querySelectorAll('.nav-links a').forEach(function(a){ a.addEventListener('click',function(){ set(false); }); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') set(false); });
+  document.addEventListener('click',function(e){ if(!h.contains(e.target)) set(false); });
 })();
 </script>
 </body>
