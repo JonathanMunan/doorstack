@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "events": [
   {
    "title": "Condominium Management 101: Directors Education",
@@ -146,22 +146,6 @@
    "verified": "alberta.uli.org event page (Thu Dec 10, 4:30 to 8 pm, pricing), checked Nov 23 2026"
   },
   {
-   "title": "Calgary Law, Real Estate & Construction Networking Event",
-   "organizer": "Sum of Five",
-   "date": "2026-12-25",
-   "start": "19:00",
-   "end": "21:00",
-   "venue": "Greta Bar",
-   "address": "213 10 Avenue SW, Calgary, AB T2R 0A4",
-   "city": "Calgary",
-   "format": "In person",
-   "cost": "$12.19 to $28.25",
-   "category": "Networking",
-   "summary": "Evening networking night for people working in law, real estate and construction; the listing shows December 25, so confirm the date with the organizer before going.",
-   "url": "https://www.eventbrite.ca/e/calgary-law-real-estate-construction-networking-event-tickets-2003405917028",
-   "verified": "Eventbrite listing and API (Fri Dec 25, 2026, 7 to 9 pm, on sale), checked Nov 20 2026; Christmas Day date looks unusual"
-  },
-  {
    "title": "Real Estate and Business Networking Calgary",
    "organizer": "Strive Networking",
    "date": "2027-01-06",
@@ -258,6 +242,22 @@
    "verified": "crebforecast.com (non-members $209 in person, $89 online; members $169 early bird to Nov 30, then $189)"
   },
   {
+   "title": "CRRA Seminar & Luncheon: Preventive Maintenance and Calgary Property Tax",
+   "organizer": "Calgary Residential Rental Association (CRRA)",
+   "date": "2027-01-21",
+   "start": "09:00",
+   "end": "13:00",
+   "venue": "Hotel Blackfoot",
+   "address": "5940 Blackfoot Trail SE, Calgary, AB T2H 2B5",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "Seminar $50 members, $100 non-members; luncheon $75 members, $125 non-members",
+   "category": "Seminar",
+   "summary": "Morning seminar for landlords and property managers on preventing equipment breakdowns, followed by a luncheon talk on Calgary property taxes for the year ahead.",
+   "url": "https://crra.ca/event/seminar-luncheon/",
+   "verified": "crra.ca events list (Jan 21, 2027, 9 am to 1 pm), event page (venue, speakers) and ticket page (prices, luncheon 11:30 am to 1 pm), checked Nov 27 2026"
+  },
+  {
    "title": "Property Deal Network Calgary",
    "organizer": "Property Deal Network (PDN)",
    "date": "2027-01-26",
@@ -288,6 +288,22 @@
    "summary": "Condo education luncheon on water damage and restoration; venue and pricing not yet posted.",
    "url": "https://www.ccisouthalberta.com/events/2027/01/28/from-flood-to-restoration",
    "verified": "ccisouthalberta.com event page (details marked coming soon)"
+  },
+  {
+   "title": "Calgary Law, Real Estate & Construction Networking Event",
+   "organizer": "Sum of Five",
+   "date": "2027-01-29",
+   "start": "19:00",
+   "end": "21:00",
+   "venue": "Greta Bar",
+   "address": "213 10 Avenue SW, Calgary, AB T2R 0A4",
+   "city": "Calgary",
+   "format": "In person",
+   "cost": "$12.19 to $28.25",
+   "category": "Networking",
+   "summary": "Evening networking night for people working in law, real estate and construction.",
+   "url": "https://www.eventbrite.ca/e/calgary-law-real-estate-construction-networking-event-tickets-2003405917028",
+   "verified": "Eventbrite listing and API (Fri Jan 29, 2027, 7 to 9 pm, $12.19 to $28.25, on sale), checked Nov 27 2026; date moved from Dec 25"
   },
   {
    "title": "2027 Calgary Emerging Trends Breakfast",
