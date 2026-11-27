@@ -30,11 +30,12 @@ async function fub(path, body) {
 exports.handler = async (event) => {
   const { payload } = JSON.parse(event.body || '{}');
   const formName = payload && payload.form_name;
-  if (formName !== 'doorstack-intake' && formName !== 'doorstack-updates' && formName !== 'doorstack-events') {
+  if (!['doorstack-intake', 'doorstack-updates', 'doorstack-events', 'doorstack-access'].includes(formName)) {
     return { statusCode: 200, body: 'ignored' };
   }
   const isEvents = formName === 'doorstack-events';
-  const isUpdates = formName === 'doorstack-updates' || isEvents;
+  const isAccess = formName === 'doorstack-access';
+  const isUpdates = formName === 'doorstack-updates' || isEvents || isAccess;
   if (!process.env.FUB_API_KEY) {
     console.error('FUB_API_KEY is not set; lead not sent to Follow Up Boss', payload.data && payload.data.email);
     return { statusCode: 200, body: 'no key' };
@@ -45,7 +46,17 @@ exports.handler = async (event) => {
   const [firstName, ...rest] = name.split(/\s+/);
   const lastName = rest.join(' ');
 
-  const details = isUpdates
+  const isAgent = isAccess && /agent/i.test(String(d.role || ''));
+  const accessDetails = isAccess ? [
+    `Joined the Doorstack access list on doorstack.ca/access as: ${d.role || '-'} (consent box ticked).`,
+    isAgent ? `Brokerage: ${d.brokerage || '-'}` : null,
+    isAgent ? `Investor clients: ${d.investor_clients || '-'}` : null,
+    !isAgent ? `Units: ${d.units || '-'}` : null,
+    !isAgent && d.their_agent ? `Their agent: ${d.their_agent}` : null,
+    d.notes ? `Looking for: ${d.notes}` : null,
+  ].filter(Boolean).join('\n') : null;
+
+  const details = isAccess ? accessDetails : isUpdates
     ? (isEvents ? 'Signed up for the weekly Calgary investor events email and Doorstack updates (consent box ticked on doorstack.ca/events).' : 'Signed up for Doorstack inventory update emails (consent box ticked on doorstack.ca).')
     : [
     `Units: ${d.units || '-'}`,
@@ -55,11 +66,16 @@ exports.handler = async (event) => {
   ].filter(Boolean).join('\n');
 
   const person = {
+    ...(isAgent ? { stage: 'Business Contact' } : {}),
     firstName: firstName || 'Doorstack',
     lastName: lastName || 'Lead',
     emails: d.email ? [{ value: d.email }] : [],
     phones: d.phone ? [{ value: d.phone }] : [],
-    tags: isUpdates
+    tags: isAccess
+      ? (isAgent
+          ? ['Doorstack', 'Agent', 'Doorstack access list'].concat(/\bcir\b/i.test(String(d.brokerage || '')) ? ['CIR'] : [])
+          : ['Doorstack', 'Investor', 'Doorstack access list', 'Doorstack updates list'])
+      : isUpdates
       ? (isEvents ? ['Doorstack', 'Investor', 'Doorstack updates list', 'Doorstack events list'] : ['Doorstack', 'Investor', 'Doorstack updates list'])
       : ['Doorstack', 'Investor', `Doorstack ${d.units || 'units unknown'}`],
   };
